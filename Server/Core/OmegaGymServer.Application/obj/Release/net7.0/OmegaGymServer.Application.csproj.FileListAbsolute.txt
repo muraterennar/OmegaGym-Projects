@@ -1,0 +1,15 @@
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/bin/Release/net7.0/OmegaGymServer.Application.deps.json
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/bin/Release/net7.0/OmegaGymServer.Application.dll
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/bin/Release/net7.0/OmegaGymServer.Application.pdb
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/bin/Release/net7.0/OmegaGymServer.Domain.dll
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/bin/Release/net7.0/OmegaGymServer.Domain.pdb
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/OmegaGymServer.Application.csproj.AssemblyReference.cache
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/OmegaGymServer.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/OmegaGymServer.Application.AssemblyInfoInputs.cache
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/OmegaGymServer.Application.AssemblyInfo.cs
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/OmegaGymServer.Application.csproj.CoreCompileInputs.cache
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/OmegaGymServer.Application.csproj.CopyComplete
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/OmegaGymServer.Application.dll
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/refint/OmegaGymServer.Application.dll
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/OmegaGymServer.Application.pdb
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Application/obj/Release/net7.0/ref/OmegaGymServer.Application.dll

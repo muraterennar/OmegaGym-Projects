@@ -1,0 +1,31 @@
+<div class="flex flex-col h-full justify-between py-6 mx-auto bg-white">
+    <img class="block mx-auto h-auto w-[200px] max-sm:ml-2 p-5 hover:scale-[1.05] duration-200" src="../../../assets//img/omega_logo.png" alt="">
+
+    <ul class="text-center w-full mb-80 flex flex-col gap-10">
+        <li routerLink="/kullanici-paneli"
+            class="sidebar-btn">
+            <div class="sidebar-btn-div">
+                <span class="text-xl max-sm:hidden"><i class="ri-dashboard-line"></i></span> <span class="max-sm:text-xs">Dashboard</span>
+            </div>
+        </li>
+        <li class="sidebar-btn" routerLink="/kullanici-paneli/uyeliklerim">
+            <div class="sidebar-btn-div">
+                <span class="text-xl max-sm:hidden"><i class="ri-profile-line"></i></span> <span  class="max-sm:text-xs">Üyeliklerim</span>
+            </div>
+        </li>
+        <li class="sidebar-btn" routerLink="/kullanici-paneli/programlarim">
+            <div class="sidebar-btn-div">
+                <span class="text-xl max-sm:text-base max-sm:hidden"><i class="ri-file-list-line"></i></span> <span  class="max-sm:text-xs">Programlarım</span>
+            </div>
+        </li>
+        <li class="sidebar-btn" routerLink="/kullanici-paneli/ayarlar">
+            <div class="sidebar-btn-div">
+                <span class="text-xl max-sm:hidden"><i class="ri-settings-3-line"></i></span> <span  class="max-sm:text-xs">Ayarlar</span>
+            </div>
+        </li>
+    </ul>
+
+    <button type="button" routerLink=""
+        class="w-[250px] mx-auto py-3 bg-slate-50 hover:bg-omg_red hover:text-slate-100 font-medium rounded-sm duration-150 flex justify-center items-center gap-2 max-sm:w-full max-sm:ml-2">
+        <span class="max-sm:hidden"><i class="ri-home-2-line"></i></span> <span class="max-sm:text-xs">Web'e Dön</span></button>
+</div>

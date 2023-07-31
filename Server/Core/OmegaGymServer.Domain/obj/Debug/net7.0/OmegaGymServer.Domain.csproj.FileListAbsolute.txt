@@ -1,0 +1,12 @@
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/bin/Debug/net7.0/OmegaGymServer.Domain.deps.json
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/bin/Debug/net7.0/OmegaGymServer.Domain.dll
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/bin/Debug/net7.0/OmegaGymServer.Domain.pdb
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/OmegaGymServer.Domain.csproj.AssemblyReference.cache
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/OmegaGymServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/OmegaGymServer.Domain.AssemblyInfoInputs.cache
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/OmegaGymServer.Domain.AssemblyInfo.cs
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/OmegaGymServer.Domain.csproj.CoreCompileInputs.cache
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/OmegaGymServer.Domain.dll
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/refint/OmegaGymServer.Domain.dll
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/OmegaGymServer.Domain.pdb
+/Users/muraterennar/Projects/OmegaGymServer/Core/OmegaGymServer.Domain/obj/Debug/net7.0/ref/OmegaGymServer.Domain.dll

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Core\OmegaGymServer.Application\OmegaGymServer.Application.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Services\" />
+	  <None Remove="Services\Token\" />
+	  <None Remove="Services\Mail\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Services\" />
+	  <Folder Include="Services\Token\" />
+	  <Folder Include="Services\Mail\" />
+	</ItemGroup>
+</Project>

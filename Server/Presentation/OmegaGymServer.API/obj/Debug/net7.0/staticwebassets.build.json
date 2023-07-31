@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DBF4l0/bcT5xPqG/3AdakK6gwAWJYGGwrHrcb33+iTM=",
+  "Source": "OmegaGymServer.API",
+  "BasePath": "_content/OmegaGymServer.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

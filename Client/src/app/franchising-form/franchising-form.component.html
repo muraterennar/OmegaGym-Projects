@@ -1,0 +1,94 @@
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img class="mx-auto h-20 w-auto" src="assets/img/omega_logo.png" alt="Your Company">
+        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Franchise Başvurusu
+        </h2>
+    </div>
+
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6" [formGroup]="francForm" (ngSubmit)="onSubmit(francForm.value)">
+
+            <div>
+                <label for="firstName" class="block text-sm font-medium leading-6 text-gray-900">
+                    Ad</label>
+                <div class="mt-2">
+                    <input id="firstName" name="firstName" type="text" autocomplete="firstName"
+                        formControlName="firstName"
+                        [ngClass]="{'franchisingInvalid': submitted && francComponnent.firstName?.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (francComponnent.firstName?.errors)">
+                        <span class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin
+                    </p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (francComponnent.firstName?.errors?.minlength || francComponnent.firstName?.errors?.minlength)">
+                        <span class="font-medium"></span>En az 2 en fazla 150 karakter içerebilir
+                    </p>
+                </div>
+            </div>
+            <div>
+                <label for="lastName" class="block text-sm font-medium leading-6 text-gray-900">
+                    Soyad</label>
+                <div class="mt-2">
+                    <input id="lastName" name="lastName" type="text" autocomplete="lastName" formControlName="lastName" [ngClass]="{'franchisingInvalid': submitted && francComponnent.lastName?.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (francComponnent.lastName?.errors)">
+                        <span class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin
+                    </p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (francComponnent.lastName?.errors?.minlength || francComponnent.lastName?.errors?.minlength)">
+                        <span class="font-medium"></span>En az 2 en fazla 150 karakter içerebilir
+                    </p>
+                </div>
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">
+                    Email</label>
+                <div class="mt-2">
+                    <input id="email" name="email" type="email" autocomplete="email" formControlName="email"
+                        placeholder="example@info.com" [ngClass]="{'franchisingInvalid': submitted && francComponnent.email?.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (francComponnent.email?.errors )">
+                        <span class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin
+                    </p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (francComponnent.email?.errors?.minlength || francComponnent.email?.errors?.minlength)">
+                        <span class="font-medium"></span>En az 2 en fazla 150 karakter içerebilir
+                    </p>
+                </div>
+            </div>
+            <div>
+                <label for="phone" class="block text-sm font-medium leading-6 text-gray-900">
+                    Telefon</label>
+                <div class="mt-2">
+                    <input id="phone" name="phone" type="tel" autocomplete="phone" formControlName="phone" [ngClass]="{'franchisingInvalid': submitted && francComponnent.phone?.errors}"
+                        placeholder="0505"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                        <p class="mt-2 text-sm text-red-600" *ngIf="submitted && !francComponnent.phone?.value">
+                            <span class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin
+                        </p>
+                        <p class="mt-2 text-sm text-red-600"
+                            *ngIf="submitted && (francComponnent.phone?.errors?.minlength || francComponnent.phone?.errors?.minlength)">
+                            <span class="font-medium"></span>11 Karakter İçermelidir (0 dahil olmak üzere)
+                        </p>
+                </div>
+            </div>
+
+
+            <div>
+                <button type="submit"
+                    class="flex w-full justify-center rounded-md bg-omg_red px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dark">Başvur</button>
+            </div>
+        </form>
+
+        <p class="mt-10 text-center text-sm text-gray-500">
+            Bize katılmak ister misniz ?
+            <a routerLink="/uyelik" class="font-semibold leading-6 text-omg_red hover:opacity-80">Üye
+                olabilirsiniz</a>
+        </p>
+    </div>
+
+    <div class="mt-5 text-center left-[46.5%] px-1 ">
+        <a routerLink="/anasayfa"><i class="ri-arrow-right-s-line"></i> <span
+                class="border-b-2 px-1 border-transparent hover:border-omg_red">Ana Sayfa</span></a>
+    </div>
+</div>

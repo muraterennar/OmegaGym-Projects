@@ -1,0 +1,124 @@
+<div id="admin_panel" class="w-full py-1 px-2 bg-dark text-start text-white text-sm"
+    *ngIf="adminRoleControle() === true">
+    <a routerLink="/admin" class="hover:underline">admin paneli</a>
+</div>
+
+<div id="toApply" tabindex="-1" class="p-2 bg-white text-dark flex justify-between items-center">
+    <div class="w-[85%] mx-auto flex justify-between items-center">
+        <div class="flex justify-between items-center gap-6">
+            <i class="ri-megaphone-fill text-gray-400 text-xl max-sm:text-sm"></i>
+            <p class="text-dark cursor-default hover:underline max-sm:text-xs">Franchising Başvurusu İçin Linke Tıklayın</p>
+        </div>
+        <div class="flex justify-between items-center gap-6">
+            <button routerLink="/franchising-basvurusu" class="bg-omg_red text-white px-3 py-2 max-sm:px-2 max-sm:py-1 text-sm rounded-md">Başvur</button>
+        </div>
+    </div>
+    <button data-dismiss-target="#toApply" class=""><i class="ri-close-fill inline-block text-lg"></i></button>
+</div>
+
+<nav #navbar
+    class="w-full bg-slate-100 h-20 max-sm:h-14 max-sm:px-3 px-6 flex items-center justify-between border-b-2 border-omg_red">
+    <img src="/assets/img/omega_logo.png" alt="" class="object-contain w-auto h-16 max-sm:h-10 p-1">
+    <div class="max-sm:right-4 max-sm:top-14 max-sm:absolute">
+        <button id="hamburgerBtn" role="button" class="hidden max-sm:block text-slate-100"
+            (click)="openHamburger(closeBtn,mobileNavbar,hambuergerBtn)" #hambuergerBtn>
+            <i class="ri-menu-2-line text-dark text-2xl"></i></button>
+    </div>
+    <div #mobileNavbar
+        class="transition-all duration-700 z-30 max-sm:flex max-sm:absolute max-sm:left-0 max-sm:top-0 max-sm:text-left max-sm:bg-dark max-sm:w-full max-sm:h-full max-sm:items-center max-sm:justify-center max-sm:-translate-x-[50rem] lg:block">
+
+        <button id="closeBtn" role="button" class="hidden absolute top-5 right-2 max-sm:block"><i
+                class="ri-close-line text-slate-100 text-2xl" (click)="closeButton(mobileNavbar, navbar)"
+                #closeBtn></i></button>
+
+        <ul
+            class="flex flex-row md:gap-2 lg:gap-14 max-sm:flex max-sm:flex-col max-sm:justify-between max-sm:items-center max-sm:px-2 max-sm:font-medium max-sm:text-lg max-[568]:text-sm max-sm:text-slate-100">
+            <li (click)="closeButton(mobileNavbar, navbar)">
+                <a href=""
+                    class="transition-all max-lg:navbarLink lg:hover:border-b-4 lg:hover:border-omg_red lg:pb-2 lg:px-1 lg:hover:underline-offset-10 md:hover:border-b-4 md:hover:border-omg_red md:pb-2 md:px-1  max-sm:flex max-sm:items-center max-sm:justify-between"><span
+                        class="hidden max-sm:block"><i class="ri-arrow-right-s-line text-omg_red text-2xl"></i></span>
+                    <span class="max-sm:block">Ana Sayfa</span></a>
+            </li>
+
+            <li (click)="closeButton(mobileNavbar, navbar)">
+                <a href="#hakkımda"
+                    class="transition-all max-lg:navbarLink lg:hover:border-b-4 lg:hover:border-omg_red lg:pb-2 lg:px-1 md:hover:border-b-4 md:hover:border-omg_red md:pb-2 md:px-1  max-sm:flex max-sm:items-center max-sm:justify-between"><span
+                        class="hidden max-sm:block"><i class="ri-arrow-right-s-line text-omg_red text-2xl"></i></span>
+                    <span class="max-sm:block">Hakkımızda</span></a>
+            </li>
+
+            <li (click)="closeButton(mobileNavbar, navbar)">
+                <a href="#foto_galeri"
+                    class="transition-all max-lg:navbarLink lg:hover:border-b-4 lg:hover:border-omg_red lg:pb-2 lg:px-1 md:hover:border-b-4 md:hover:border-omg_red md:pb-2 md:px-1  max-sm:flex max-sm:items-center max-sm:justify-between"><span
+                        class="hidden max-sm:block"><i class="ri-arrow-right-s-line text-omg_red text-2xl"></i></span>
+                    <span class="max-sm:block">Foto Galeri</span></a>
+            </li>
+
+            <li (click)="closeButton(mobileNavbar, navbar)">
+                <a href="#ekibimiz"
+                    class="transition-all max-lg:navbarLink lg:hover:border-b-4 lg:hover:border-omg_red lg:pb-2 lg:px-1 md:hover:border-b-4 md:hover:border-omg_red md:pb-2 md:px-1  max-sm:flex max-sm:items-center max-sm:justify-between"><span
+                        class="hidden max-sm:block"><i class="ri-arrow-right-s-line text-omg_red text-2xl"></i></span>
+                    <span class="max-sm:block">Ekibimiz</span></a>
+            </li>
+
+            <li (click)="closeButton(mobileNavbar, navbar)">
+                <a href="#üyelikler"
+                    class="transition-all max-lg:navbarLink lg:hover:border-b-4 lg:hover:border-omg_red lg:pb-2 lg:px-1 md:hover:border-b-4 md:hover:border-omg_red md:pb-2 md:px-1  max-sm:flex max-sm:items-center max-sm:justify-between"><span
+                        class="hidden max-sm:block"><i class="ri-arrow-right-s-line text-omg_red text-2xl"></i></span>
+                    <span class="max-sm:block">Üyelikler</span></a>
+            </li>
+
+            <li (click)="closeButton(mobileNavbar, navbar)">
+                <a href="#iletişim"
+                    class="transition-all max-lg:navbarLink lg:hover:border-b-4 lg:hover:border-omg_red lg:pb-2 lg:px-1 md:hover:border-b-4 md:hover:border-omg_red md:pb-2 md:px-1  max-sm:flex max-sm:items-center max-sm:justify-between"><span
+                        class="hidden max-sm:block"><i class="ri-arrow-right-s-line text-omg_red text-2xl"></i></span>
+                    <span class="max-sm:block">İletişim</span></a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- <div class="md:m-0">
+        <div class="w-auto p-4" *ngIf="avatarControl() === false">
+            <a routerLink="/giris"
+                class="btn mr-1 max-sm:mr-1 max-sm:text-xs max-sm:border-r-2 max-sm:px-3 transition-colors hover:text-omg_red lg:py-3 lg:px-3 lg:border-r-2 hover:underline hover:underline-offset-5">Giriş</a>
+            <a routerLink="/uyelik"
+                class="btn btn-logout p-4 max-sm:text-xs max-sm:mr-2 max-sm:p-3 text-slate-900 transition-colors before:rounded-sm hover:text-slate-100 hover:underline hover:underline-offset-4"
+                role="button"><span class="text">Bize Katıl</span></a>
+        </div>
+
+
+        <div class="flex items-center space-x-4 cursor-default" *ngIf="avatarControl() === true">
+            <img *ngIf="gender == 'erkek'" id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                data-dropdown-trigger="hover"
+                class="w-14 h-14 rounded-full cursor-pointer ring-2 ring-transparent hover:ring-omg_red duration-150 p-1"
+                src="/assets/admin-img/man.png" alt="man">
+            <img *ngIf="gender == 'kadın'" id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                data-dropdown-trigger="hover"
+                class="w-14 h-14 rounded-full cursor-pointer ring-2 ring-transparent hover:ring-omg_red duration-150 p-1"
+                src="/assets/admin-img/woman.png" alt="woman">
+            <div class="font-medium dark:text-white">
+                <div>{{firstName}} {{lastName}}</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">Hoş Geldiniz</div>
+            </div>
+        </div>
+
+        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-56">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+                <li>
+                    <a (click)="adminToUser()" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Kullanıcı
+                        Paneli</a>
+                </li>
+                <li>
+                    <a routerLink="" class="block px-4 py-2 hover:bg-gray-100">Programlarım</a>
+                </li>
+                <li>
+                    <a routerLink="" class="block px-4 py-2 hover:bg-gray-100">Ayarlar</a>
+                </li>
+                <li>
+                    <a (click)="singOut()" class="block px-4 py-2 cursor-pointer hover:bg-gray-100">Çıkış</a>
+                </li>
+            </ul>
+        </div>
+
+    </div> -->
+</nav>

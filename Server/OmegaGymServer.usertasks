@@ -1,0 +1,16 @@
+<ListOfTaskListEntry>
+  <TaskListEntry file="" description="Mail Gönderme Servisi Oluştur" completed="True" />
+  <TaskListEntry file="" description="Loglama Servisi Oluştur" />
+  <TaskListEntry file="" description="Şifre Yenileme Operasyonu Oluştur. Tek sayfalık unic bir page oluşturulmuş haliyle" priority="High" completed="True" />
+  <TaskListEntry file="" description="Two Factor Authanticaiton Oluştur" priority="High" completed="True" />
+  <TaskListEntry file="" description="Admin tarafında kullanıcı oluşturulduğunda mail yoluyla şifre gönderme operasyonu oluştur" priority="High" completed="True" />
+  <TaskListEntry file="" description="Tüm Sorgularar validaiton ekle  hataları geri dönüşünü yönet" priority="Low" completed="True" />
+  <TaskListEntry file="" description="Tüm operasyomşarı servis mantığı ile persistance katmanında yürüt IServisleri Çağır" completed="True" />
+  <TaskListEntry file="" description="Get All operasyonu için sayfalama yöntemini ekle" priority="Low" />
+  <TaskListEntry file="" description="ilk başta seeding ile adminleri eklemeyi yap" priority="High" completed="True" />
+  <TaskListEntry file="" description="Role Bazlı Sorgu Ekleme" priority="High" completed="True" />
+  <TaskListEntry file="" description="SetBasePath'i yayınlamak için düzenle." />
+  <TaskListEntry file="" description="User eklerken geçici şifre oluşturup eklemeyi yap (isim-soyisim ile ekleyip bir kombinasyon)" priority="High" completed="True" />
+  <TaskListEntry file="" description="User Sybcription da subsriptionDate ayarlama" />
+  <TaskListEntry file="" description="Email daha sonra portları Omega ya göre ayarla" priority="High" />
+</ListOfTaskListEntry>

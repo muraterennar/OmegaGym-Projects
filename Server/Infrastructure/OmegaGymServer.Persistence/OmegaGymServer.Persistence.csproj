@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Core\OmegaGymServer.Application\OmegaGymServer.Application.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Contexts\" />
+	  <None Remove="GenericRepository\" />
+	  <None Remove="GenericRepository\SubscriptionCategoryRepo\" />
+	  <None Remove="GenericRepository\SubscriptionRepo\" />
+	  <None Remove="GenericRepository\OperationClaimRepo\" />
+	  <None Remove="GenericRepository\UserSubscriptionRepo\" />
+	  <None Remove="Services\" />
+	  <None Remove="GenericRepository\ImageRepo\" />
+	  <None Remove="Consts\" />
+	  <None Remove="GenericRepository\FranchisingRepo\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Contexts\" />
+	  <Folder Include="GenericRepository\" />
+	  <Folder Include="GenericRepository\SubscriptionCategoryRepo\" />
+	  <Folder Include="GenericRepository\SubscriptionRepo\" />
+	  <Folder Include="GenericRepository\OperationClaimRepo\" />
+	  <Folder Include="GenericRepository\UserSubscriptionRepo\" />
+	  <Folder Include="Services\" />
+	  <Folder Include="GenericRepository\ImageRepo\" />
+	  <Folder Include="Consts\" />
+	  <Folder Include="GenericRepository\FranchisingRepo\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	    <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
+	  <PackageReference Include="Bogus" Version="34.0.2" />
+	</ItemGroup>
+</Project>

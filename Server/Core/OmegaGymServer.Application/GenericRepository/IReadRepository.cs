@@ -1,0 +1,3 @@
+﻿using System.Linq.Expressions;using OmegaGymServer.Domain.Entities.Common;namespace OmegaGymServer.Application.GenericRepository;public interface IReadRepository<T> : IRepository<T> where T : BaseEntity{    IQueryable<T> GetAll(bool tracing = true);    IQueryable<T> GetWhere(Expression<Func<T, bool>> expression, bool tracing = true);    Task<T> GetSingleAsync(Expression<Func<T, bool>> expression, bool tracing = true);    Task<T> GetByIdAsync(Guid id, bool tracing = true);
+    //Task<T> GetByIdFindAsync(Guid id, bool tracing = true);
+}

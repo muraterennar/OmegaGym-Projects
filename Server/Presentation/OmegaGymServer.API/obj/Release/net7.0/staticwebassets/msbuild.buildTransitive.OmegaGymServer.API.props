@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/OmegaGymServer.API.props" />
+</Project>

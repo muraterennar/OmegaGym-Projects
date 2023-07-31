@@ -1,0 +1,107 @@
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img class="mx-auto h-20 w-auto" src="assets/img/omega_logo.png" alt="Your Company">
+        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Giriş Yap
+        </h2>
+    </div>
+
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+            <div>
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">
+                    Email</label>
+                <div class="mt-2">
+                    <input id="email" name="email" type="email" autocomplete="email" formControlName="email"
+                        [ngClass]="{'loginInvalid': submitted && loginComponent.email.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (loginComponent.email.errors)"><span
+                            class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin</p>
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (loginComponent.email.errors?.email)"><span
+                            class="font-medium">Hata !</span> Doğru Türde Yazınız</p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (loginComponent.email.errors?.minlength || loginComponent.email.errors?.maxlength)">
+                        <span class="font-medium">Hata !</span> En az 13 en fazla 150 karakter içermelidir
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center justify-between">
+                    <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Şifre</label>
+                    <div class="text-sm">
+                        <a routerLink="/reset-password" class="font-semibold text-omg_red hover:text-indigo-500">Şifremi
+                            Unuttum?</a>
+                    </div>
+                </div>
+                <div class="mt-2 relative">
+                    <button type="button" class="absolute top-0 right-0 lg:text-3xl text-omg_red"
+                        (click)="toogleEye(eyeOpen, eyeClose, passwordInput)"><i #eyeOpen class="ri-eye-line p-2"></i>
+                        <i #eyeClose class="ri-eye-off-line p-2 hidden"></i></button>
+                    <input #passwordInput id="password" name="password" type="password" autocomplete="current-password"
+                        formControlName="password"
+                        [ngClass]="{'loginInvalid': submitted && loginComponent.password.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (loginComponent.password.errors)"><span
+                            class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin</p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (loginComponent.password.errors?.invalidPassword)"><span
+                            class="font-medium"></span>Büyük Küçük Harf / Özel Karakter / Rakam İçermelidir</p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (loginComponent.password.errors?.minlength || loginComponent.password.errors?.maxlength)">
+                        <span class="font-medium">Hata !</span> En az 6 karakter en fazla 12 karakter içermelidir
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit"
+                    class="flex w-full justify-center rounded-md bg-omg_red px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Giriş</button>
+            </div>
+        </form>
+
+        <p class="mt-10 text-center text-sm text-gray-500">
+            Bize katılmak ister misniz ?
+            <a routerLink="/uyelik" class="font-semibold leading-6 text-omg_red hover:opacity-80">Üye
+                olabilirsiniz</a>
+        </p>
+    </div>
+
+    <div class="absolute bottom-5 text-center left-[46.5%] px-1 ">
+        <a routerLink="/anasayfa"><i class="ri-arrow-right-s-line"></i> <span
+                class="border-b-2 px-1 border-transparent hover:border-omg_red">Ana Sayfa</span></a>
+    </div>
+</div>
+
+<div id="modalEl" tabindex="-1" aria-hidden="true"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
+                    İki Aşamalı Doğrulama
+                </h3>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 space-y-6">
+                <div>
+                    <label for="small-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kodu
+                        Girin:</label>
+                    <input type="text" id="small-input" #singleCode
+                        class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500">
+                </div>
+
+                <p>Aşağıda İşleyen Süre İçinde Giriş Yapılmalıdır !</p>
+                <p class="text-omg_red font-medium text-lg mb-4">{{countdown}}</p>
+            </div>
+            <!-- Modal footer -->
+            <div class="p-6 space-x-2 border-t border-gray-200 rounded-b text-end">
+                <button data-modal-hide="staticModal" type="submit" (click)="onTwoFactor(loginForm.value, singleCode)"
+                    [disabled]="!singleCode.value || singleCode.value.length <=5"
+                    [ngClass]="{'cursor-not-allowed bg-slate-400 hover:bg-slate-400':!singleCode.value || singleCode.value.length <= 5}"
+                    class="text-white bg-omg_red hover:bg-red-600 focus:outline-none font-medium rounded-md text-sm px-5 py-2.5 text-center">Doğrula</button>
+            </div>
+        </div>
+    </div>
+</div>

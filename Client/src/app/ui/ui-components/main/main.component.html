@@ -1,0 +1,723 @@
+<!--  ============= NAVBAR ================  -->
+<app-navbar class="absolute z-20 w-full max-sm:h-full top-0 left-0"></app-navbar>
+<!-- ============= NAVBAR ================ -->
+
+<!-- ============= MAIN ================ -->
+<main id="main" class="w-full h-full z-0">
+    <!-- ============ HERO PAGE ================ -->
+    <section
+        class="hero_page bg-omg_red bg-main_hero w-full h-full bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative">
+        <div id="background_opacity" class="bg-dark p-1 w-full h-full opacity-70 absolute"></div>
+
+        <!-- ============ HERO ================ -->
+        <div id="hero" class="z-10 text-slate-100 mt-16 max-sm:mt-24">
+            <h1 class="font-medium lg:mb-5 max-sm:mb-1 bg-omg_red lg:p-2 md:p-1 max-sm:p-1 rounded-sm text-slate-100 max-sm:text-xs inline-block md:text-2xl lg:text-2xl uppercase"
+                data-aos="fade-right" data-aos-delay="1200" data-aos-duration="2000">
+                İstanbul</h1>
+            <h1 class="font-bold max-sm:text-3xl md:text-6xl lg:text-8xl uppercase" data-aos="fade-in"
+                data-aos-delay="55" data-aos-duration="2000">Silivri/Selimpaşa</h1>
+        </div>
+
+        <!-- ============ TYPING ANIMATION ================ -->
+        <div class="typed-text mt-5 text-lg w-[350px] max-sm:w-[250px] max-sm:text-xs text-slate-100 z-10 flex items-center justify-around"
+            data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000">
+            <h1><i class="ri-double-quotes-l"></i></h1>
+            <!-- <h1>Bugün Başla Yarın Mutlu OL</h1> -->
+            <h1>Bugün </h1>
+            <div
+                class="typed-text-first cursor-pointer transition-colors duration-150 hover:bg-omg_red w-[88px] h-[35px] max-sm:w-[68px] max-sm:h-[25px] rounded flex items-center justify-start">
+                <ngx-typed-js class="block" [strings]="['Başla', 'Ağrı']" [typeSpeed]="100" [showCursor]="false"
+                    [loop]="true" [backSpeed]="50" [backDelay]="1500">
+                    <span
+                        class="typing ml-3 text-xl max-sm:text-sm font-bold border-b-2 border-omg_red uppercase"></span>
+                </ngx-typed-js>
+            </div>
+            <h1>Yarın </h1>
+            <div
+                class="typed-text-first transition-colors cursor-pointer hover:bg-omg_red w-[88px] h-[35px] max-sm:w-[68px] max-sm:h-[25px] rounded flex items-center justify-start">
+                <ngx-typed-js class="" [strings]="['Güçlü', 'Mutlu']" [typeSpeed]="100" [showCursor]="false"
+                    [loop]="true" [backSpeed]="55" [backDelay]="2000">
+                    <span
+                        class="typing ml-3 text-xl max-sm:text-sm font-bold uppercase border-b-2 border-omg_red"></span>
+                </ngx-typed-js>
+            </div>
+            <h1><i class="ri-double-quotes-r"></i></h1>
+        </div>
+        <!-- ============ TYPING ANIMATION ================ -->
+
+        <!-- ============ SOCIAL MEDIA ================ -->
+        <div class="social_media flex flex-col text-slate-100 z-20 gap-y-5 absolute bottom-5 right-10 max-sm:gap-y-1 max-sm:bottom-1 max-sm:right-2 max-sm:hidden"
+            data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+            <a [href]="instagram"
+                class="transition bg-transparent hover:bg-omg_red rounded-full px-2 py-1 text-2xl max-sm:text-lg"><i
+                    class="ri-instagram-fill"></i></a>
+            <a [href]="youtube"
+                class="transition bg-transparent hover:bg-omg_red rounded-full px-2 py-1 text-2xl max-sm:text-lg"><i
+                    class="ri-youtube-fill"></i></a>
+            <a [href]="'mailto:'+mail"
+                class="transition bg-transparent hover:bg-omg_red rounded-full px-2 py-1 text-2xl max-sm:text-lg"><i
+                    class="ri-mail-fill"></i></a>
+        </div>
+
+        <!-- ============ SOCIAL MEDIA ================ -->
+    </section>
+    <!-- ============ HERO PAGE ================ -->
+
+    <!-- ============ ABOUT ================ -->
+    <section id="hakkımda"
+        class="about w-full lg:h-screen max-sm:py-8 max-sm:px-4 flex lg:flex-row md:flex-col md:py-10 max-sm:flex-col md:justify-center max-sm:justify-between items-center justify-around">
+        <div
+            class="first_about_text max-sm:w-full h-auto uppercase max-sm:ml-13 font-extrabold text-7xl leading-[65px] transition cursor-pointer">
+            <h1 class="text-4xl max-sm:text-4xl font-semibold">
+                İstanbul</h1>
+            <h1 class="hover:text-omg_red" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">Omega
+            </h1>
+            <h1 class="hover:text-omg_red" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">Gym</h1>
+            <h1 class="hover:text-omg_red" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000">Fitness
+            </h1>
+            <h1 class="hover:text-omg_red" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="1000">Merkezi
+            </h1>
+        </div>
+        <div
+            class="three_about_text lg:w-1/3 lg:items-center md:w-full max-sm:items-start md:items-center max-sm:w-full max-sm:mb-20 md:mb-20 mt-40  flex flex-col gap-2">
+            <img src="../../../../assets/img/about_img_1.jpg" alt=""
+                class="lg:w-[350px] md:w-[400px] max-sm:w-[280px] transition h-auto md:mx-auto max-sm:mx-auto rounded hover:opacity-95 hover:scale-[1.01] hover:rotate-1">
+            <h1 class="uppercase lg:text-3xl md:text-3xl font-bold lg:ml-3 max-sm:text-xl" data-aos="fade-up"
+                data-aos-delay="500" data-aos-duration="1000">
+                YENİ SPOR SALONUNA MERHABA DE!</h1>
+            <p class="w-[85%] max-sm:w-full lg:text-base  md:text-xl lg:ml-3 max-sm:text-sm" data-aos="fade-up"
+                data-aos-delay="500" data-aos-duration="1000">
+                Omega GYM fitness
+                merkezi ile alanında deneyim sahibi eğitmenlerden yardım alın. Daha
+                sağlıklı
+                ve daha güçlü olmak için Omega GYM fitness salonu bünyesinde kendinizin en iyi hali olun!
+            </p>
+        </div>
+        <div
+            class="three_about_text lg:w-1/3 lg:items-center md:w-full max-sm:items-start md:items-center max-sm:w-full max-sm:mb-1 mb-32 flex flex-col gap-2">
+            <img src="../../../../assets/img/about_img_2.jpg" alt=""
+                class="lg:w-[350px] md:w-[400px] max-sm:w-[280px] transition h-auto md:mx-auto max-sm:mx-auto rounded hover:opacity-95 hover:scale-[1.01] hover:rotate-1">
+            <h1 class="uppercase lg:text-3xl md:text-3xl font-bold lg:ml-3 max-sm:text-xl" data-aos="fade-up"
+                data-aos-delay="500" data-aos-duration="1000">
+                KENDİNİ GELİŞTİR</h1>
+            <p class="w-[85%] max-sm:w-full lg:text-base  md:text-xl lg:ml-3 max-sm:text-sm" data-aos="fade-up"
+                data-aos-delay="500" data-aos-duration="1000">
+                Uzman eğitmenleri ile
+                güç ve dayanıklılık çalışması sunan Omega GYM bünyesindeki
+                tecrübeli eğitmenleri ve
+                alanında uzman sporcularıyla nitelikli bir fitness atmosferi sunuyor. Sporun farklı arka planlarından
+                gelen eğitmenleri ile Omega GYM’de sonuçların görülebildiği bir fitness sürecinin kapılarını aralayın.
+            </p>
+        </div>
+    </section>
+    <!-- ============ ABOUT ================ -->
+
+    <!-- ============ Foto Galeri ================ -->
+    <section id="foto_galeri" class="p-10 w-full bg-dark flex flex-col items-center justify-between">
+        <h1
+            class="transition font-semibold text-slate-100 inline-block border-b-4 border-transparent hover:border-omg_red text-6xl my-10 max-sm:text-4xl max-sm:">
+            Foto Galeri</h1>
+
+        <div class="grid grid-cols-3 max-sm:grid-cols-2 gap-4">
+            <div class="grid gap-4">
+                <div *ngFor="let imageOneGap of images | slice:0:3"
+                    class="duration-200 hover:scale-[1.01] max-w-full hover:rotate-1 border-2 border-transparent hover:border-omg_red rounded-lg overflow-hidden">
+                    <img id="myImage{{imageOneGap.id}}" #myImage
+                        class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                        [src]="imageOneGap.imageUrl" [alt]="imageOneGap.imageName"
+                        (click)="imageModelClick(imageModel,myImage,myModelImage, closeBtn)" data-aos="fade-up"
+                        data-aos-delay="500" data-aos-duration="1000">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div *ngFor="let imageTwoGap of images | slice:3:6"
+                    class="duration-200 hover:scale-[1.01] max-w-full hover:rotate-1 border-2 border-transparent hover:border-omg_red rounded-lg overflow-hidden">
+                    <img #myImage
+                        class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                        [src]="imageTwoGap.imageUrl" [alt]="imageTwoGap.imageName" data-aos="fade-up"
+                        (click)="imageModelClick(imageModel,myImage,myModelImage, closeBtn)" data-aos="fade-up"
+                        data-aos-delay="500" data-aos-duration="1000">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div *ngFor="let imageThreeGap of images | slice:6:9"
+                    class="duration-200 hover:scale-[1.01] max-w-full hover:rotate-1 border-2 border-transparent hover:border-omg_red rounded-lg overflow-hidden">
+                    <img #myImage
+                        class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                        [src]="imageThreeGap.imageUrl" [alt]="imageThreeGap.imageName" data-aos="fade-up"
+                        (click)="imageModelClick(imageModel,myImage,myModelImage, closeBtn)" data-aos="fade-up"
+                        data-aos-delay="500" data-aos-duration="1000">
+                </div>
+            </div>
+
+            <div class="grid gap-4">
+                <div *ngFor="let imageFourGap of images | slice:9:12"
+                    class="duration-200 hover:scale-[1.01] max-w-full hover:rotate-1 border-2 border-transparent hover:border-omg_red rounded-lg overflow-hidden">
+                    <img #myImage
+                        class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                        [src]="imageFourGap.imageUrl" [alt]="imageFourGap.imageName" data-aos="fade-up"
+                        (click)="imageModelClick(imageModel,myImage,myModelImage, closeBtn)" data-aos="fade-up"
+                        data-aos-delay="500" data-aos-duration="1000">
+                </div>
+            </div>
+
+            <div class="grid gap-4">
+                <div *ngFor="let imageFiveGap of images | slice:12:15"
+                    class="duration-200 hover:scale-[1.01] w-full hover:rotate-1 border-2 border-transparent hover:border-omg_red rounded-lg overflow-hidden">
+                    <img #myImage
+                        class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                        [src]="imageFiveGap.imageUrl" [alt]="imageFiveGap.imageName" data-aos="fade-up"
+                        (click)="imageModelClick(imageModel,myImage,myModelImage, closeBtn)" data-aos="fade-up"
+                        data-aos-delay="500" data-aos-duration="1000">
+                </div>
+            </div>
+
+            <div class="grid gap-4">
+                <div *ngFor="let imageSixGap of images | slice:15:18"
+                    class="duration-200 hover:scale-[1.01] w-full hover:rotate-1 border-2 border-transparent hover:border-omg_red rounded-lg overflow-hidden">
+                    <img #myImage
+                        class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                        [src]="imageSixGap.imageUrl" [alt]="imageSixGap.imageName" data-aos="fade-up"
+                        (click)="imageModelClick(imageModel,myImage,myModelImage, closeBtn)" data-aos="fade-up"
+                        data-aos-delay="500" data-aos-duration="1000">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOTO GALERY MODEL -->
+    <div id="imageModel" #imageModel
+        class="hidden fixed z-40 pt-28 left-0 top-0 w-full h-full overflow-auto bg-dark/90">
+        <!-- close btn -->
+        <span #closeBtn
+            class="absolute top-[15px] right-[35px] text-slate-100 text-3xl font-bold transition hover:text-omg_red hover:decoration-transparent hover:cursor-pointer"><i
+                class="ri-close-fill"></i></span>
+
+        <!-- model content (The image) -->
+        <img id="modelImage" #myModelImage class="model_image m-auto block w-[80%] max-w-[700px] max-sm:w-full" src=""
+            alt="">
+    </div>
+    <!-- FOTO GALERY MODEL -->
+    <!-- ============ Foto Galeri ================ -->
+
+    <!-- ============ Team Galeri ================ -->
+
+    <section id="ekibimiz" class="w-full flex flex-col justify-around items-center">
+        <h1
+            class="transition text-dark font-bold my-10 inline-block border-b-4 border-transparent hover:border-omg_red text-6xl max-sm:text-5xl max-sm:">
+            Ekibimiz</h1>
+        <div
+            class="w-full flex item-center justify-around my-14 max-sm:px-5 max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:gap-y-10 ">
+            <!-- MEHMET BALTACI -->
+            <figure id="figure"
+                class="transition lg:hover:-translate-y-8 shadow-xl max-sm:h-[400px] relative max-w-sm duration-300 cursor-pointer filter overflow-hidden border-2 border-transparent rounded-lg hover:rounded-lg hover:border-omg_red"
+                data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" #modelFigure>
+                <a>
+                    <img class="rounded-lg w-[500px] h-auto transition duration-200 hover:scale-110 "
+                        [src]="methmetBaltaci.img" [alt]="methmetBaltaci.username">
+                </a>
+                <figcaption
+                    class="absolute px-4 bg-dark w-full p-4 text-lg text-white bottom-0 flex justify-between items-center">
+                    <div>
+                        <p class="uppercase">{{methmetBaltaci.username}}</p>
+                        <p class="text-sm text-omg_red">{{methmetBaltaci.position}}</p>
+                    </div>
+                    <div class="">
+                        <button *ngIf="methmetBaltaci.username == 'Mehmet Baltacı'" type="button"
+                            class="font-normal text-sm bg-omg_red px-4 py-2 rounded-sm hover:opacity-70"
+                            data-modal-target="medium-modal" data-modal-toggle="medium-modal">Bilgi</button>
+
+                        <!-- <button *ngIf="methmetBaltaci.username == 'Mehmet Baltacı'" type="button"
+                            class="font-normal text-sm bg-omg_red px-4 py-2 rounded-sm hover:opacity-70"
+                            data-modal-target="medium-modal" data-modal-toggle="medium-modal"
+                            (click)="getModel(modelFigure, person.id)">Bilgi</button> -->
+                    </div>
+
+                </figcaption>
+            </figure>
+
+            <!-- Gökhan BALTACI -->
+            <figure id="figure"
+                class="transition lg:hover:-translate-y-8 shadow-xl max-sm:h-[400px] relative max-w-sm duration-300 cursor-pointer filter overflow-hidden border-2 border-transparent rounded-lg hover:rounded-lg hover:border-omg_red"
+                data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" #modelFigure>
+                <a>
+                    <img class="rounded-lg w-[500px] h-auto transition duration-200 hover:scale-110 "
+                        [src]="gokhanSarikurt.img" [alt]="gokhanSarikurt.username">
+                </a>
+                <figcaption
+                    class="absolute px-4 bg-dark w-full p-4 text-lg text-white bottom-0 flex justify-between items-center">
+                    <div>
+                        <p class="uppercase">{{gokhanSarikurt.username}}</p>
+                        <p class="text-sm text-omg_red">{{gokhanSarikurt.position}}</p>
+                    </div>
+                    <div>
+
+                    </div>
+
+                </figcaption>
+            </figure>
+
+            <!-- Gökhan BALTACI -->
+            <figure id="figure"
+                class="transition lg:hover:-translate-y-8 shadow-xl max-sm:h-[400px] relative max-w-sm duration-300 cursor-pointer filter overflow-hidden border-2 border-transparent rounded-lg hover:rounded-lg hover:border-omg_red"
+                data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" #modelFigure>
+                <a>
+                    <img class="rounded-lg w-[500px] h-auto transition duration-200 hover:scale-110 "
+                        [src]="serdarSarikurt.img" [alt]="serdarSarikurt.username">
+                </a>
+                <figcaption
+                    class="absolute px-4 bg-dark w-full p-4 text-lg text-white bottom-0 flex justify-between items-center">
+                    <div>
+                        <p class="uppercase">{{serdarSarikurt.username}}</p>
+                        <p class="text-sm text-omg_red">{{serdarSarikurt.position}}</p>
+                    </div>
+                    <div>
+
+                    </div>
+
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- TEAM Model -->
+    <div id="medium-modal" tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full overflow-x-hidden overflow-y-auto p-4 md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-7xl max-h-full">
+            <!-- Modal content -->
+
+            <div class="relative rounded-lg shadow bg-dark">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+                    <!-- <h3 class="text-xl font-medium text-slate-100">
+                        Hakkında
+                    </h3> -->
+                    <button type="button"
+                        class="text-slate-300 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="medium-modal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <!-- ABOUT -->
+                    <div class="text-slate-100">
+                        <h1 class="text-2xl border-b-2 border-omg_red inline-block text-slate-100 mb-10">Hakkında</h1>
+                        <div class="flex flex-col gap-5">
+                            <p>MEHMET BALTACI, 1999 yılında İstanbul'un Silivri İlçesi'nde doğmuştur. Beden Eğitimi
+                                öğretmeni ve aynı zamanda antrenördür. İlkokul ve ortaokul eğitimini SELİMPAŞA
+                                İlköğretim
+                                Okulu'nda tamamlamıştır. Lise eğitimine ise Selimpaşa Anadolu İmam-Hatip Lisesi'nde
+                                devam
+                                etmiştir.</p>
+                            <p>
+                                Lise döneminde, <span class="text-omg_red">"</span>GOLDEN GLOVES<span
+                                    class="text-omg_red">"</span> Boks Kulübü'ne katılarak İstanbul Bölge
+                                Şampiyonası'nda
+                                3.'lük elde etmiştir. 2018 yılında İstanbul Haliç Üniversitesi BESYO Bölümü'ne burslu
+                                olarak
+                                kabul edilerek eğitimine burada başlamış ve bir yıl süren eğitimini tamamlamıştır.
+                                Ardından
+                                yüksek not ortalamasıyla Tekirdağ Namık Kemal Üniversitesi'ne yatay geçiş yaparak lisans
+                                eğitimini burada tamamlamıştır.
+                            </p>
+                            <p>MEHMET BALTACI, İstanbul Büyükşehir Belediyesi'ne bağlı plajlarda 5 yıl süresince
+                                cankurtaran
+                                olarak çalışmıştır. Ayrıca <span class="text-omg_red">"</span>Yardımcı Yüzme
+                                Antrenörü<span class="text-omg_red">"</span>, <span
+                                    class="text-omg_red">"</span>Yardımcı Boks Antrenörlüğü<span
+                                    class="text-omg_red">"</span> ve
+                                <span class="text-omg_red">"</span>Vücut Geliştirme ve Fitness Antrenörlüğü<span
+                                    class="text-omg_red">"</span> unvanlarına sahiptir.
+                            </p>
+                            <p>Eğitimini tamamladıktan sonra Selimpaşa'da kendi bölgesinde yer alan ortaklarıyla
+                                birlikte
+                                <span class="text-omg_red">"</span>OMEGA GYM<span class="text-omg_red">"</span>
+                                markasını kurarak Selimpaşa'da fitness, boks ve yüzme eğitimi vermektedir.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- CERTIFICA -->
+                    <div>
+                        <h1 class="text-2xl border-b-2 border-omg_red inline-block text-slate-100 mb-10">Sertifikalar
+                        </h1>
+                        <div class="grid grid-cols-4 max-sm:grid-cols-2 gap-4 justify-center">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg transition-all hover:opacity-70"
+                                    [src]="certificas.LsnDipcertificaImg" [alt]="certificas.LsnDipcertificaImg">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg transition-all hover:opacity-70"
+                                    [src]="certificas.OnrBelcertificaImg" [alt]="certificas.OnrBelCertificaName">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg transition-all hover:opacity-70"
+                                    [src]="certificas.YrdAntcertificaImg" [alt]="certificas.YrdAntCertificaName">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg transition-all hover:opacity-70"
+                                    [src]="certificas.YrdAnt2CertificaImg" [alt]="certificas.YrdAnt2CertificaName">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ Team ================ -->
+
+    <!-- ============ subscription ================ -->
+
+    <section id="üyelikler" class="bg-dark text-center">
+        <div class="mx-auto px-4">
+            <!-- Üyelik Header -->
+            <div class="mx-auto w-full max-w-screen-md text-center mb-8 lg:mb-12">
+                <h1
+                    class="transition text-slate-100 font-bold my-10 inline-block border-b-4 p-2 border-transparent hover:border-omg_red text-6xl max-sm:text-4xl max-sm:">
+                    Üyelikler</h1>
+                <p class="mb-5 font-light text-slate-400 text-lg max-sm:text-sm">Esnek üyelik paketleri ve seans
+                    seçenekleri
+                    sunarak müşterilerimize en uygun seçenekleri sunmaktayız. Profesyonel eğitmenlerimiz, kişisel
+                    antrenman programları ve performans takibi gibi ek hizmetlerle bireysel gereksinimlere odaklanmayı
+                    hedeflemekteyiz.</p>
+            </div>
+
+            <!-- Fittness -->
+            <div class="mb-2 mx-auto">
+                <h1
+                    class="duration-200 text-slate-100 font-bold text-3xl inline-block mb-14 px-14 py-1 border-b-4 border-omg_red">
+                    Fitness</h1>
+
+                <div class="lg:grid lg:grid-cols-5 max-sm:flex max-sm:flex-col md:flex md:flex-col gap-5">
+                    <div *ngFor="let SubFitness of subscriptionFitness" data-aos="fade-up" data-aos-delay="800"
+                        class="pricing_card hover:scale-[1.02] h-full flex flex-col lg:w-[auto] max-sm:w-[300px] md:w-[500px] cursor-pointer p-6 mx-auto max-w-lg text-center text-dark bg-white rounded-lg border-2 border-gray-100 shadow duration-200 xl:p-8 hover:border-omg_red">
+                        <h3 class="mb-4 text-2xl font-semibold">{{SubFitness.subscriptionTitle}}</h3>
+                        <p class="font-light text-gray-500 text-[17px]">{{SubFitness.subscriptionDescription}}
+                        </p>
+                        <div class="flex justify-center items-baseline my-8">
+                            <span
+                                class="price mr-2 text-5xl max-sm:hover:active:text-omg_red font-extrabold">{{SubFitness.subscriptionPrice
+                                }}</span>
+                            <span class="text-gray-500 dark:text-gray-400">/₺</span>
+                        </div>
+                        <ul role="list" class="mb-8 space-y-4 lg:text-left">
+                            <li class="flex items-center space-x-3">
+                                <i class="ri-check-fill text-green-500 text-xl"></i>
+                                <span>{{SubFitness.subscriptionArticlelOne| titlecase}}</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="ri-check-fill text-green-500 text-xl"></i>
+                                <span>{{SubFitness.subscriptionArticlelTwo| titlecase}}</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="ri-check-fill text-green-500 text-xl"></i>
+                                <span>{{SubFitness.subscriptionArticlelThree| titlecase}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subscription Header 2 -->
+            <div class="flex lg:flex-row md:flex-col max-sm:flex-col col-span-1 gap-10 justify-around items-center p-8">
+                <!-- Boks Card -->
+                <div class="mb-20" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    <h1
+                        class="duration-200 text-slate-100 font-bold text-3xl inline-block mb-14 px-14 py-1 border-b-4 border-omg_red">
+                        Boks</h1>
+
+                    <div
+                        class="space-y-8 grid lg:grid-flow-col md:gap-6 max-sm:gap-6 xl:gap-10 lg:space-y-0 place-content-center place-items-center justify-center">
+                        <!-- Pricing Card -->
+                        <div *ngFor="let boks of subscriptionBoks" data-aos="fade-up" data-aos-delay="800"
+                            data-aos-duration="800"
+                            class="pricing_card hover:scale-[1.02] lg:w-[380px] md:w-[500px] max-sm:w-[300px] h-full flex flex-col cursor-pointer p-6 mx-auto max-w-lg text-center text-dark bg-white rounded-lg border-2 border-gray-100 shadow duration-200 xl:p-8 hover:border-omg_red">
+                            <h3 class="mb-4 text-2xl font-semibold">{{boks.subscriptionTitle}}</h3>
+                            <p class="font-light text-gray-500 text-[17px]">{{boks.subscriptionDescription}}
+                            </p>
+                            <div class="flex justify-center items-baseline my-8">
+                                <span
+                                    class="price mr-2 text-5xl max-sm:hover:active:text-omg_red font-extrabold">{{boks.subscriptionPrice
+                                    }}</span>
+                                <span class="text-gray-500 dark:text-gray-400">/₺</span>
+                            </div>
+                            <!-- List -->
+                            <ul role="list" class="mb-8 space-y-4 text-left">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{boks.subscriptionArticlelOne| titlecase}}</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{boks.subscriptionArticlelTwo| titlecase}}</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{boks.subscriptionArticlelThree| titlecase}}</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plates Card -->
+                <div class="mb-20" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    <h1
+                        class="duration-200 text-slate-100 font-bold  text-3xl inline-block mb-14 px-14 py-1 border-b-4 border-omg_red">
+                        Plates</h1>
+
+                    <div
+                        class="space-y-8 grid lg:grid-flow-col md:gap-6 max-sm:gap-6 xl:gap-10 lg:space-y-0 place-content-center place-items-center justify-center">
+                        <!-- Pricing Card -->
+                        <div *ngFor="let plates of subscriptionPlates" data-aos="fade-up" data-aos-delay="800"
+                            data-aos-duration="800"
+                            class="pricing_card hover:scale-[1.02] lg:w-[380px] md:w-[500px] max-sm:w-[300px] h-full flex flex-col cursor-pointer p-6 mx-auto max-w-lg text-center text-dark bg-white rounded-lg border-2 border-gray-100 shadow duration-200 xl:p-8 hover:border-omg_red">
+                            <h3 class="mb-4 text-2xl font-semibold">{{plates.subscriptionTitle}}</h3>
+                            <p class="font-light text-gray-500 text-[17px]">{{plates.subscriptionDescription}}
+                            </p>
+                            <div class="flex justify-center items-baseline my-8">
+                                <span
+                                    class="price mr-2 text-5xl max-sm:hover:active:text-omg_red font-extrabold">{{plates.subscriptionPrice
+                                    }}</span>
+                                <span class="text-gray-500 dark:text-gray-400">/₺</span>
+                            </div>
+                            <!-- List -->
+                            <ul role="list" class="mb-8 space-y-4 text-left">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{plates.subscriptionArticlelOne| titlecase}}</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{plates.subscriptionArticlelTwo| titlecase}}</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{plates.subscriptionArticlelThree| titlecase}}</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swimming Card -->
+                <div class="mb-20" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    <h1
+                        class="duration-200 text-slate-100 font-bold  text-3xl inline-block mb-14 px-14 py-1 border-b-4 border-omg_red">
+                        Yüzme</h1>
+
+                    <div
+                        class="space-y-8 grid lg:grid-flow-col md:gap-6 max-sm:gap-6 xl:gap-10 lg:space-y-0 place-content-center place-items-center justify-center">
+                        <!-- Pricing Card -->
+                        <div *ngFor="let swimming of subscriptionSwimming" data-aos="fade-up" data-aos-delay="800"
+                            data-aos-duration="800"
+                            class="pricing_card hover:scale-[1.02] lg:w-[380px] md:w-[500px] max-sm:w-[300px] h-full flex flex-col cursor-pointer p-6 mx-auto max-w-lg text-center text-dark bg-white rounded-lg border-2 border-gray-100 shadow duration-200 xl:p-8 hover:border-omg_red">
+                            <h3 class="mb-4 text-2xl font-semibold">{{swimming.subscriptionTitle}}</h3>
+                            <p class="font-light text-gray-500 text-[17px]">{{swimming.subscriptionDescription}}
+                            </p>
+                            <div class="flex justify-center items-baseline my-8">
+                                <span
+                                    class="price mr-2 text-5xl max-sm:hover:active:text-omg_red font-extrabold">{{swimming.subscriptionPrice
+                                    }}</span>
+                                <span class="text-gray-500 dark:text-gray-400">/₺</span>
+                            </div>
+                            <!-- List -->
+                            <ul role="list" class="mb-8 space-y-4 text-left">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{swimming.subscriptionArticlelOne| titlecase}}</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{swimming.subscriptionArticlelTwo| titlecase}}</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{swimming.subscriptionArticlelThree| titlecase}}</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col justify-center items-center mb-20">
+                <!-- Folk Dance Card -->
+                <div class="mb-20" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    <h1
+                        class="duration-200 text-slate-100 font-bold  text-3xl inline-block mb-14 px-14 py-1 border-b-4 border-omg_red">
+                        Halk Oyunları</h1>
+
+                    <div
+                        class="space-y-8 grid lg:grid-flow-col md:gap-6 max-sm:gap-6 xl:gap-10 lg:space-y-0 place-content-center place-items-center justify-center">
+                        <!-- Pricing Card -->
+                        <div *ngFor="let folkDance of subscriptionFolkDance" data-aos="fade-up" data-aos-delay="800"
+                            data-aos-duration="800"
+                            class="pricing_card hover:scale-[1.02] lg:w-[380px] md:w-[500px] max-sm:w-[300px] h-full flex flex-col cursor-pointer p-6 mx-auto max-w-lg text-center text-dark bg-white rounded-lg border-2 border-gray-100 shadow duration-200 xl:p-8 hover:border-omg_red">
+                            <h3 class="mb-4 text-2xl font-semibold">{{folkDance.subscriptionTitle}}</h3>
+                            <p class="font-light text-gray-500 text-[17px]">{{folkDance.subscriptionDescription}}
+                            </p>
+                            <div class="flex justify-center items-baseline my-8">
+                                <span
+                                    class="price mr-2 text-5xl max-sm:hover:active:text-omg_red font-extrabold">{{folkDance.subscriptionPrice
+                                    }}</span>
+                                <span class="text-gray-500 dark:text-gray-400">/₺</span>
+                            </div>
+                            <!-- List -->
+                            <ul role="list" class="mb-8 space-y-4 text-left">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{folkDance.subscriptionArticlelOne| titlecase}}</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{folkDance.subscriptionArticlelTwo| titlecase}}</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <i class="ri-check-fill text-green-500 text-xl"></i>
+                                    <span>{{folkDance.subscriptionArticlelThree| titlecase}}</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ subscription ================ -->
+
+    <!-- ============ Contact ================ -->
+    <section id="iletişim" class="w-full lg:h-screen flex flex-col justify-around items-center">
+        <div class="map bg-dark w-full md:h-[500px]">
+            <!-- 41.056725661642865, 28.35868352746056 -->
+            <iframe class="w-full h-full max-sm:h-screen max-sm:border-b-2 border-b-2 border-omg_red"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188.0351667508931!2d28.358584083729543!3d41.05669190000551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b5413634bfec5f%3A0x97ceebb2a288170e!2sOMEGAGYM!5e0!3m2!1str!2str!4v1688204792423!5m2!1str!2str"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div
+            class="contact w-full h-full flex lg:flex-row md:flex-col max-sm:flex-col justify-around items-center border-t-2 border-omg_red">
+            <!-- Contact_Details -->
+            <div class="flex max-sm:flex-col h-full py-5 items-center gap-x-24" data-aos="fade-in" data-aos-delay="500"
+                data-aos-duration="1000">
+
+                <div class="flex flex-col h-full py-5 items-start max-sm:items-center justify-center gap-y-14">
+                    <div class="contact-mail flex items-center justify-between gap-4 cursor-pointer">
+                        <span
+                            class="text-2xl bg-slate-100 px-4 py-3 max-sm:px-2 max-sm:py-1 max-sm:text-xl  rounded-full contact-icon"><i
+                                class="ri-phone-line"></i></span>
+                        <span class="text-xl max-sm:text-lg contact-text text-gray-500  hover:text-dark ">{{tel}}</span>
+                    </div>
+                    <div
+                        class="contact-mail flex items-center justify-between max-sm:items-center gap-4 cursor-pointer">
+                        <span
+                            class="text-2xl bg-slate-100 px-4 py-3 max-sm:px-2 max-sm:py-1 max-sm:text-xl  rounded-full contact-icon"><i
+                                class="ri-mail-line"></i></span>
+                        <span
+                            class="text-xl max-sm:text-lg contact-text text-gray-500  hover:text-dark ">{{mail}}</span>
+                    </div>
+                    <div
+                        class="contact-mail flex items-center justify-between max-sm:items-center gap-4 mb-9 cursor-pointer">
+                        <span
+                            class="text-2xl bg-slate-100 px-4 py-3 max-sm:px-2 max-sm:py-1 max-sm:text-xl rounded-full contact-icon"><i
+                                class="ri-map-pin-line"></i></span>
+                        <span class="text-xl max-sm:text-[16px] contact-text text-gray-500 hover:text-dark">Selimpaşa
+                            Merkez,
+                            Silivri/İstanbul</span>
+                    </div>
+                </div>
+
+                <div class="contact-mail max-sm:mx-8 flex items-center justify-between gap-4 cursor-pointer">
+                    <span
+                        class="text-2xl max-sm:text-lg bg-slate-100 px-4 py-3 max-sm:px-2 max-sm:py-1 rounded-full contact-icon"><i
+                            class="ri-time-line"></i></span>
+                    <div class="flex flex-col gap-4 justify-around items-center">
+                        <span class="text-xl max-sm:text-lg text-gray-500 hover:text-dark contact-text ">Hafata İçi
+                            08:00-22:00</span>
+                        <span class="text-xl max-sm:text-lg text-gray-500 hover:text-dark contact-text ">Cumartesi
+                            09:00-21:00</span>
+                        <span class="text-xl max-sm:text-lg text-gray-500  hover:text-dark contact-text ">Pazar
+                            Kapalı</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border h-full lg:w-0 md:w-full max-sm:w-full max-sm:h-0 max-sm:mt-8"></div>
+            <!-- Contact_Forms -->
+            <div class="contact-forms lg:w-auto max-sm:w-full md:w-[80%] lg:p-1 md:p-8 max-sm:p-8" data-aos="fade-down"
+                data-aos-delay="500" data-aos-duration="1000">
+                <form>
+                    <!-- Email -->
+                    <div class="relative z-0 w-full mb-6 group">
+                        <input #contactMail type="email" name="floating_email" id="floating_email"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-omg_red peer"
+                            placeholder=" " required />
+                        <label for="floating_email"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-omg_red peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                        </label>
+                    </div>
+                    <!-- FirstName -->
+                    <div class="grid md:grid-cols-2 md:gap-6">
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input #contactFirstName type="text" name="floating_first_name" id="floating_first_name"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-omg_red peer"
+                                placeholder=" " required />
+                            <label for="floating_first_name"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-omg_red peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Ad</label>
+                        </div>
+                        <!-- LastName -->
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input #contactLastName type="text" name="floating_last_name" id="floating_last_name"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-omg_red peer"
+                                placeholder=" " required />
+                            <label for="floating_last_name"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-omg_red peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Soyad</label>
+                        </div>
+                    </div>
+                    <!-- Description -->
+                    <div class="relative z-0 w-full mb-6 group">
+
+                        <textarea #contactDescription id="message" rows="4"
+                            class="block p-2.5 w-full text-sm text-dark bg-gray-50 resize-none rounded-lg border border-gray-300 focus:ring-omg_red focus:border-omg_red"
+                            placeholder="Merhaba ..." maxlength="250"></textarea>
+
+                    </div>
+                    <button
+                        (click)="sendMail(contactFirstName.value, contactLastName.value, contactMail.value, contactDescription.value, $event)"
+                        class="text-white bg-omg_red hover:opacity-90 focus:ring-4 focus:outline-none focus:ring-transparent font-medium rounded text-sm w-full sm:w-auto px-5 py-2.5 text-center">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ============ Contact ================ -->
+
+    <!-- ============ Footer ================ -->
+    <app-footer></app-footer>
+    <!-- ============ Footer ================ -->
+</main>

@@ -1,0 +1,14 @@
+<div class="flex flex-col justify-between items-center h-full py-6 max-sm:py-4">
+    <img class="h-auto w-[200px] max-sm:w-[100px] max-sm:hidden" src="/assets/icons/android-chrome-512x512.png" alt="512x512_Omega">
+    <div id="admin_sidebar" class="flex flex-col lg:gap-10 max-sm:gap-5 mb-10 w-[70%] items-start text-start">
+        <button id="admin_sidebar_close" class="hidden max-sm:block text-[35px] text-omg_red absolute top-0 right-0" (click)="close()"><i class="ri-arrow-drop-left-line"></i></button>
+
+        <a routerLink="/admin" class="admin-sidebar"><span class="lg:text-lg mr-1"><i class="ri-dashboard-line"></i></span> Dashborad</a>
+        <a routerLink="/admin/subscription" class="admin-sidebar"><span class="lg:text-lg mr-1"><i class="ri-file-list-line"></i></span> Abonelik İşlemleri</a>
+        <a routerLink="/admin/admin-settings" class="admin-sidebar"><span class="lg:text-lg mr-1"><i class="ri-admin-line"></i></span> Admin İşlemleri</a>
+        <a class="admin-sidebar"><span class="lg:text-lg mr-1"><i class="ri-user-settings-line"></i></span> Üye İşlemleri</a>
+        <a class="admin-sidebar"><span class="lg:text-lg mr-1"><i class="ri-attachment-2"></i></span> Üyelik Programı İşlemleri</a>
+        <a class="admin-sidebar"><span class="lg:text-lg mr-1"><i class="ri-chat-3-line"></i></span> Toplu Mesaj</a>
+    </div>
+    <button routerLink="" type="button" class="bg-slate-100 py-2 hover:bg-omg_red hover:text-slate-50 w-[70%] max-sm:text-sm rounded-sm duration-200">Web Sayfası</button>
+</div>

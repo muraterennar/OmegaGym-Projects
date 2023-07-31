@@ -1,0 +1,20 @@
+<div class="flex justify-between items-start bg-slate-100 min-h-screen">
+    <div id="admin_sidebar" #admin_sidebar
+        class="bg-white lg:w-[400px] max-sm:absolute max-sm:w-[250px] max-sm:border-r-[1.5px] max-sm:border-omg_red max-sm:z-10 text-center h-screen max-sm:h-screen duration-200 sidebar-translate-close">
+        <app-admin-sidebar></app-admin-sidebar>
+    </div>
+    <div class="w-full text-center min-h-screen h-auto flex flex-col max-sm:flex-col justify-start items-center">
+        <div class="w-full text-start hidden max-sm:flex max-sm:justify-between max-sm:items-center border-b-2 border-omg_red">
+            <button id="admin_sidebar_open" class="bg-omg_red text-lg p-2 text-white rounded-r-sm font-semibold" (click)="openSidebar(admin_sidebar)"><i
+                    class="ri-menu-unfold-line"></i></button>
+
+                    <div class="w-full text-center"><img class="h-auto w-10 mx-auto" src="/assets/icons/android-chrome-512x512.png" alt="banner"></div>
+        </div>
+        <div class="bg-[#fefefe] w-full p-10 header-shadow">
+            <app-admin-header></app-admin-header>
+        </div>
+        <div class="mt-5 px-5 w-full">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

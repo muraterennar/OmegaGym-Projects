@@ -1,0 +1,53 @@
+<header class="bg-[#fdfdfd] flex justify-between items-center px-6 py-4">
+    <div class="header-url-name lg:text-4xl max-sm:text-base font-semibold">
+        <i class="ri-menu-3-line text-omg_red"></i> <span class="ml-8 max-sm:ml-2 text-dark">Üyeliğim</span>
+    </div>
+    <div class="user-section flex items-center gap-6 cursor-default">
+
+        <div class="bg-slate-200 h-[50px] w-[1.5px] mr-2 max-sm:hidden"></div>
+
+        <div class="flex flex-col items-end max-sm:hidden">
+            <p><span class="lg:text-lg font-light text-dark">Merhaba, </span> <span
+                    class="lg:ext-xl font-medium text-dark hover:text-omg_red">{{fullName}}</span></p>
+            <p class="lg:text-sm md:text-xs font-light  text-[#9e9e9e]">Üyemiz</p>
+        </div>
+        <!-- Men Avatar -->
+        <button id="userDropdownButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" type="button"
+            class=" duration-200 cursor-pointer rounded-full lg:mr-10">
+            <!-- <img class="w-[80px] max-sm:w-[50px] md:w-[55px] h-auto" src="/assets/admin-img/man.png" alt="men"> -->
+            <img *ngIf="gender == 'erkek'" id="dropdownBtn" data-dropdown-toggle="dropdownDelay"
+                data-dropdown-delay="200" data-dropdown-trigger="hover"
+                class="p-1 rounded-full ring-4 ring-transparent hover:ring-omg_red duration-150 cursor-pointer w-[80px] max-sm:w-[50px] md:w-[55px]"
+                src="/assets/admin-img/man.png" alt="Bordered avatar">
+            <img *ngIf="gender == 'kadın'" id="dropdownBtn" data-dropdown-toggle="dropdownDelay"
+                data-dropdown-delay="200" data-dropdown-trigger="hover"
+                class="p-1 rounded-full ring-4 ring-transparent hover:ring-omg_red duration-150 cursor-pointer w-[80px] max-sm:w-[50px] md:w-[55px]"
+                src="/assets/admin-img/woman.png" alt="Bordered avatar">
+        </button>
+
+        <!-- DropDownMenu -->
+        <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-44">
+            <ul class="py-2 text-sm text-dark " aria-labelledby="dropdownHoverButton">
+                <li>
+                    <p class="block px-4 py-2 hover:bg-gray-100 duration-150">Üyelik Tarihi : <span
+                            class="font-medium underline hover:text-omg_red">11.09.2023</span></p>
+                </li>
+                <li>
+                    <p class="block px-4 py-2 hover:bg-gray-100 duration-150">Yenileme Tarihi : <span
+                            class="font-medium underline hover:text-omg_red">11.12.2023</span></p>
+                </li>
+                <li>
+                    <p routerLink=""
+                        class="block px-4 py-2 hover:bg-omg_red hover:text-slate-100 duration-150 cursor-pointer">Çıkış
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Woman Avatar -->
+        <!-- <button type="button"
+            class="outline outline-offset-1 outline-4 outline-transparent hover:outline-omg_red duration-200 cursor-pointer rounded-full">
+            <img class="w-[80px] max-sm:w-[50px] h-auto" src="/assets/admin-img/woman.png" alt="men">
+        </button> -->
+    </div>
+</header>

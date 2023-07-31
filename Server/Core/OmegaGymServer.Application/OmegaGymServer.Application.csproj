@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\OmegaGymServer.Domain\OmegaGymServer.Domain.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="GenericRepository\" />
+	  <None Remove="GenericRepository\SubscriptionRepo\" />
+	  <None Remove="GenericRepository\SubscriptionCategoryRepo\" />
+	  <None Remove="Features\" />
+	  <None Remove="Features\Commands\" />
+	  <None Remove="Features\Queries\" />
+	  <None Remove="Features\Queries\SubscriptionCategoryQuery\" />
+	  <None Remove="Features\Queries\SubscriptionCategoryQuery\GetAllSubscriptionCategory\" />
+	  <None Remove="Features\Queries\SubscriptionCategoryQuery\GetByIdForSubscriptionCategory\" />
+	  <None Remove="Features\Queries\SubscriptionQuery\" />
+	  <None Remove="Features\Queries\SubscriptionQuery\GetAllSubscription\" />
+	  <None Remove="Features\Commands\SubscriptionCommand\" />
+	  <None Remove="Features\Commands\SubscriptionCommand\InsertSubscriptionQuery\" />
+	  <None Remove="Features\Commands\SubscriptionCategoryCommad\" />
+	  <None Remove="Features\Commands\SubscriptionCategoryCommad\InsertSubscriptionCategoryCommand\" />
+	  <None Remove="Helper\" />
+	  <None Remove="Helper\Securtiy\" />
+	  <None Remove="Features\Queries\SubscriptionQuery\GetByIdSubscription\" />
+	  <None Remove="Validator\" />
+	  <None Remove="Features\Commands\UserCommand\" />
+	  <None Remove="Features\Commands\UserCommand\RegisterQuery\" />
+	  <None Remove="Helper\CustomException\" />
+	  <None Remove="Mapping\" />
+	  <None Remove="GenericRepository\OperationClaimRepo\" />
+	  <None Remove="Features\Queries\OperationClaimQuery\" />
+	  <None Remove="Features\Queries\OperationClaimQuery\GetAllOperationClaim\" />
+	  <None Remove="Features\Queries\UserQuery\" />
+	  <None Remove="Features\Queries\UserQuery\GetAllUserQuery\" />
+	  <None Remove="GenericRepository\UserSubscriptionRepo\" />
+	  <None Remove="Features\Queries\UserSubscriptionQuery\" />
+	  <None Remove="Features\Queries\UserSubscriptionQuery\GetAllUserSubscription\" />
+	  <None Remove="Validator\UserValidator\" />
+	  <None Remove="Validator\SubscriptionValidator\" />
+	  <None Remove="Validator\SubscriptionCategory\" />
+	  <None Remove="Features\Queries\OperationClaimQuery\GetByIdOperationClaim\" />
+	  <None Remove="Features\Queries\OperationClaimQuery\GetByNameOperationClaim\" />
+	  <None Remove="Validator\OperationClaimValidator\" />
+	  <None Remove="Features\Queries\SubscriptionCategoryQuery\GetByNameSubscriptionCategory\" />
+	  <None Remove="Features\Queries\SubscriptionQuery\GetByNameSubscription\" />
+	  <None Remove="Features\Queries\SubscriptionQuery\GetByCategoryIdSubscription\" />
+	  <None Remove="Features\Queries\UserQuery\GetByIdUserQuery\" />
+	  <None Remove="Features\Queries\UserQuery\GetByOperationClaimIdQuery\" />
+	  <None Remove="Features\Queries\UserQuery\GetByFirstnameUserQuery\" />
+	  <None Remove="Features\Queries\UserQuery\GetByUsernameUserQuery\" />
+	  <None Remove="Features\Queries\UserSubscriptionQuery\GetByIdUserSubscription\" />
+	  <None Remove="Features\Queries\UserSubscriptionQuery\GetByUserIdUserSubscription\" />
+	  <None Remove="Features\Queries\UserSubscriptionQuery\GetBySubscriptionIdUserSubscription\" />
+	  <None Remove="Features\Commands\SubscriptionCommand\UpdateSubscriptionCommand\" />
+	  <None Remove="Features\Commands\SubscriptionCommand\DeleteSubscriptionCommand\" />
+	  <None Remove="Features\Commands\SubscriptionCategoryCommad\UpdateSubscriptionCategoryCommand\" />
+	  <None Remove="Features\Commands\SubscriptionCategoryCommad\DeleteSubscriptionCategoryCommand\" />
+	  <None Remove="Features\Commands\UserCommand\InsertUserCommand\" />
+	  <None Remove="Features\Commands\UserCommand\UpdateUserCommand\" />
+	  <None Remove="Features\Commands\OperationCliamCommand\" />
+	  <None Remove="Features\Commands\OperationCliamCommand\InsertOperationClaimCommand\" />
+	  <None Remove="Features\Commands\UserSubscriptionCommand\" />
+	  <None Remove="Features\Commands\UserSubscriptionCommand\InsertUserSubscriptionCommand\" />
+	  <None Remove="Features\Commands\OperationCliamCommand\UpdateOperationCliamCommand\" />
+	  <None Remove="Features\Commands\OperationCliamCommand\DeleteOperationClaimCommand\" />
+	  <None Remove="Features\Commands\UserCommand\DeleteUserCommand\" />
+	  <None Remove="Features\Commands\UserSubscriptionCommand\UpdateUserSubscriptionCommand\" />
+	  <None Remove="Features\Commands\UserSubscriptionCommand\DeleteUserSubscriptionCommand\" />
+	  <None Remove="Validator\UserSubscriptionValidator\" />
+	  <None Remove="Extensions\" />
+	  <None Remove="Abstract\" />
+	  <None Remove="Abstract\Services\" />
+	  <None Remove="Abstract\Token\" />
+	  <None Remove="Abstract\Token\JWT\" />
+	  <None Remove="DTOs\" />
+	  <None Remove="DTOs\AuthDTOs\" />
+	  <None Remove="DTOs\UserDTOs\" />
+	  <None Remove="Utilities\" />
+	  <None Remove="Utilities\IoC\" />
+	  <None Remove="Extentions\" />
+	  <None Remove="CustomAttributes\" />
+	  <None Remove="Consts\" />
+	  <None Remove="DTOs\OperationClaimDTOs\" />
+	  <None Remove="DTOs\SubscriptionDTOs\" />
+	  <None Remove="DTOs\SubscriptionCategoryDTOs\" />
+	  <None Remove="Features\Queries\SubscriptionQuery\GetDetailsSubcription\" />
+	  <None Remove="Abstract\Mail\" />
+	  <None Remove="Features\Commands\MailCommand\" />
+	  <None Remove="GenericRepository\ImageRepo\" />
+	  <None Remove="DTOs\ImageDTOs\" />
+	  <None Remove="Features\Queries\ImageQuery\" />
+	  <None Remove="Features\Queries\ImageQuery\GetAllImageQuery\" />
+	  <None Remove="Features\Queries\ImageQuery\GetByIdImageQuery\" />
+	  <None Remove="Features\Queries\ImageQuery\GetByNameImageQuery\" />
+	  <None Remove="Features\Commands\ImageCommand\" />
+	  <None Remove="Features\Commands\ImageCommand\InsertImageCommand\" />
+	  <None Remove="Features\Commands\ImageCommand\UpdateImageCommand\" />
+	  <None Remove="Features\Commands\ImageCommand\DeleteImageCommand\" />
+	  <None Remove="Features\Commands\AuthCommand\ResetTokenCommand\" />
+	  <None Remove="Features\Commands\AuthCommand\VerifyResetTokenCommnad\" />
+	  <None Remove="Features\Commands\UserCommand\UpdatePasswordCommand\" />
+	  <None Remove="Features\Commands\AuthCommand\SendSingleCodeCommand\" />
+	  <None Remove="Features\Commands\AuthCommand\TwoFactorAuthCommand\" />
+	  <None Remove="DTOs\FranchingDTOs\" />
+	  <None Remove="GenericRepository\FranchisingRepo\" />
+	  <None Remove="Features\Commands\FranchisingCommand\" />
+	  <None Remove="Features\Commands\FranchisingCommand\AddFranchisingCommand\" />
+	  <None Remove="Features\Commands\FranchisingCommand\DeleteFranchisingCommand\" />
+	  <None Remove="Features\Queries\FranchisingQuery\" />
+	  <None Remove="Features\Queries\FranchisingQuery\GetAllFranchisingQuery\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="GenericRepository\" />
+	  <Folder Include="GenericRepository\SubscriptionRepo\" />
+	  <Folder Include="GenericRepository\SubscriptionCategoryRepo\" />
+	  <Folder Include="Features\" />
+	  <Folder Include="Features\Commands\" />
+	  <Folder Include="Features\Queries\" />
+	  <Folder Include="Features\Queries\SubscriptionCategoryQuery\" />
+	  <Folder Include="Features\Queries\SubscriptionCategoryQuery\GetAllSubscriptionCategory\" />
+	  <Folder Include="Features\Queries\SubscriptionCategoryQuery\GetByIdForSubscriptionCategory\" />
+	  <Folder Include="Features\Queries\SubscriptionQuery\" />
+	  <Folder Include="Features\Queries\SubscriptionQuery\GetAllSubscription\" />
+	  <Folder Include="Features\Commands\SubscriptionCommand\" />
+	  <Folder Include="Features\Commands\SubscriptionCommand\InsertSubscriptionCommand\" />
+	  <Folder Include="Features\Commands\SubscriptionCategoryCommad\" />
+	  <Folder Include="Features\Commands\SubscriptionCategoryCommad\InsertSubscriptionCategoryCommand\" />
+	  <Folder Include="Helper\" />
+	  <Folder Include="Helper\Securtiy\" />
+	  <Folder Include="Features\Queries\SubscriptionQuery\GetByIdSubscription\" />
+	  <Folder Include="Validator\" />
+	  <Folder Include="Features\Commands\AuthCommand\" />
+	  <Folder Include="Features\Commands\AuthCommand\RegisterCommand\" />
+	  <Folder Include="Helper\CustomException\" />
+	  <Folder Include="Mapping\" />
+	  <Folder Include="GenericRepository\OperationClaimRepo\" />
+	  <Folder Include="Features\Queries\OperationClaimQuery\" />
+	  <Folder Include="Features\Queries\OperationClaimQuery\GetAllOperationClaim\" />
+	  <Folder Include="Features\Queries\UserQuery\" />
+	  <Folder Include="Features\Queries\UserQuery\GetAllUserQuery\" />
+	  <Folder Include="GenericRepository\UserSubscriptionRepo\" />
+	  <Folder Include="Features\Queries\UserSubscriptionQuery\" />
+	  <Folder Include="Features\Queries\UserSubscriptionQuery\GetAllUserSubscription\" />
+	  <Folder Include="Validator\UserValidator\" />
+	  <Folder Include="Validator\SubscriptionValidator\" />
+	  <Folder Include="Validator\SubscriptionCategoryValidator\" />
+	  <Folder Include="Features\Queries\OperationClaimQuery\GetByIdOperationClaim\" />
+	  <Folder Include="Features\Queries\OperationClaimQuery\GetByNameOperationClaim\" />
+	  <Folder Include="Validator\OperationClaimValidator\" />
+	  <Folder Include="Features\Queries\SubscriptionCategoryQuery\GetByNameSubscriptionCategory\" />
+	  <Folder Include="Features\Queries\SubscriptionQuery\GetByNameSubscription\" />
+	  <Folder Include="Features\Queries\SubscriptionQuery\GetByCategoryIdSubscription\" />
+	  <Folder Include="Features\Queries\UserQuery\GetByIdUserQuery\" />
+	  <Folder Include="Features\Queries\UserQuery\GetByOperationClaimIdQuery\" />
+	  <Folder Include="Features\Queries\UserQuery\GetByFirstnameUserQuery\" />
+	  <Folder Include="Features\Queries\UserQuery\GetByUsernameUserQuery\" />
+	  <Folder Include="Features\Queries\UserSubscriptionQuery\GetByIdUserSubscription\" />
+	  <Folder Include="Features\Queries\UserSubscriptionQuery\GetByUserIdUserSubscription\" />
+	  <Folder Include="Features\Queries\UserSubscriptionQuery\GetBySubscriptionIdUserSubscription\" />
+	  <Folder Include="Features\Commands\SubscriptionCommand\UpdateSubscriptionCommand\" />
+	  <Folder Include="Features\Commands\SubscriptionCommand\DeleteSubscriptionCommand\" />
+	  <Folder Include="Features\Commands\SubscriptionCategoryCommad\UpdateSubscriptionCategoryCommand\" />
+	  <Folder Include="Features\Commands\SubscriptionCategoryCommad\DeleteSubscriptionCategoryCommand\" />
+	  <Folder Include="Features\Commands\UserCommand\" />
+	  <Folder Include="Features\Commands\UserCommand\InsertUserCommand\" />
+	  <Folder Include="Features\Commands\UserCommand\UpdateUserCommand\" />
+	  <Folder Include="Features\Commands\OperationCliamCommand\" />
+	  <Folder Include="Features\Commands\OperationCliamCommand\InsertOperationClaimCommand\" />
+	  <Folder Include="Features\Commands\UserSubscriptionCommand\" />
+	  <Folder Include="Features\Commands\UserSubscriptionCommand\InsertUserSubscriptionCommand\" />
+	  <Folder Include="Features\Commands\OperationCliamCommand\UpdateOperationCliamCommand\" />
+	  <Folder Include="Features\Commands\OperationCliamCommand\DeleteOperationClaimCommand\" />
+	  <Folder Include="Features\Commands\UserCommand\DeleteUserCommand\" />
+	  <Folder Include="Features\Commands\UserSubscriptionCommand\UpdateUserSubscriptionCommand\" />
+	  <Folder Include="Features\Commands\UserSubscriptionCommand\DeleteUserSubscriptionCommand\" />
+	  <Folder Include="Validator\UserSubscriptionValidator\" />
+	  <Folder Include="Abstract\" />
+	  <Folder Include="Abstract\Services\" />
+	  <Folder Include="Abstract\Token\" />
+	  <Folder Include="Abstract\Token\JWT\" />
+	  <Folder Include="DTOs\" />
+	  <Folder Include="DTOs\AuthDTOs\" />
+	  <Folder Include="DTOs\UserDTOs\" />
+	  <Folder Include="Utilities\" />
+	  <Folder Include="Utilities\IoC\" />
+	  <Folder Include="Extentions\" />
+	  <Folder Include="CustomAttributes\" />
+	  <Folder Include="Consts\" />
+	  <Folder Include="DTOs\OperationClaimDTOs\" />
+	  <Folder Include="DTOs\SubscriptionDTOs\" />
+	  <Folder Include="DTOs\SubscriptionCategoryDTOs\" />
+	  <Folder Include="Features\Queries\SubscriptionQuery\GetDetailsSubcription\" />
+	  <Folder Include="Abstract\Mail\" />
+	  <Folder Include="Features\Commands\MailCommand\" />
+	  <Folder Include="GenericRepository\ImageRepo\" />
+	  <Folder Include="DTOs\ImageDTOs\" />
+	  <Folder Include="Features\Queries\ImageQuery\" />
+	  <Folder Include="Features\Queries\ImageQuery\GetAllImageQuery\" />
+	  <Folder Include="Features\Queries\ImageQuery\GetByIdImageQuery\" />
+	  <Folder Include="Features\Queries\ImageQuery\GetByNameImageQuery\" />
+	  <Folder Include="Features\Commands\ImageCommand\" />
+	  <Folder Include="Features\Commands\ImageCommand\InsertImageCommand\" />
+	  <Folder Include="Features\Commands\ImageCommand\UpdateImageCommand\" />
+	  <Folder Include="Features\Commands\ImageCommand\DeleteImageCommand\" />
+	  <Folder Include="Features\Commands\AuthCommand\ResetTokenCommand\" />
+	  <Folder Include="Features\Commands\AuthCommand\VerifyResetTokenCommnad\" />
+	  <Folder Include="Features\Commands\UserCommand\UpdatePasswordCommand\" />
+	  <Folder Include="Features\Commands\AuthCommand\SendSingleCodeCommand\" />
+	  <Folder Include="Features\Commands\AuthCommand\TwoFactorAuthCommand\" />
+	  <Folder Include="DTOs\FranchingDTOs\" />
+	  <Folder Include="GenericRepository\FranchisingRepo\" />
+	  <Folder Include="Features\Commands\FranchisingCommand\" />
+	  <Folder Include="Features\Commands\FranchisingCommand\AddFranchisingCommand\" />
+	  <Folder Include="Features\Commands\FranchisingCommand\DeleteFranchisingCommand\" />
+	  <Folder Include="Features\Queries\FranchisingQuery\" />
+	  <Folder Include="Features\Queries\FranchisingQuery\GetAllFranchisingQuery\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+	  <PackageReference Include="MediatR" Version="11.1.0" />
+	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+	  <PackageReference Include="AutoMapper" Version="12.0.1" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	</ItemGroup>
+</Project>

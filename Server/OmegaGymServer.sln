@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{AF4FD0B2-6FF9-4D85-B37C-1837B3B60680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infastructure", "Infastructure", "{3D35C009-6968-4D1D-B91C-B32F825E2BCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{E810C166-0CD0-41EB-B3F5-736F6909EFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmegaGymServer.Domain", "Core\OmegaGymServer.Domain\OmegaGymServer.Domain.csproj", "{FB4B3276-18DF-45EB-B713-1884194299E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmegaGymServer.Application", "Core\OmegaGymServer.Application\OmegaGymServer.Application.csproj", "{DA44C524-C554-4BEF-9C9F-F325138498F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmegaGymServer.Persistence", "Infrastructure\OmegaGymServer.Persistence\OmegaGymServer.Persistence.csproj", "{DFB892A9-4B46-4AED-840A-2C3CD2C247D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmegaGymServer.Infrastructure", "Infrastructure\OmegaGymServer.Infrastructure\OmegaGymServer.Infrastructure.csproj", "{BDF068DB-B056-49BB-A1B4-89714FA9E26A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmegaGymServer.API", "Presentation\OmegaGymServer.API\OmegaGymServer.API.csproj", "{DA204067-9831-4FD0-93E9-5396F4DE5A9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB4B3276-18DF-45EB-B713-1884194299E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4B3276-18DF-45EB-B713-1884194299E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4B3276-18DF-45EB-B713-1884194299E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4B3276-18DF-45EB-B713-1884194299E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA44C524-C554-4BEF-9C9F-F325138498F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA44C524-C554-4BEF-9C9F-F325138498F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA44C524-C554-4BEF-9C9F-F325138498F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA44C524-C554-4BEF-9C9F-F325138498F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB892A9-4B46-4AED-840A-2C3CD2C247D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB892A9-4B46-4AED-840A-2C3CD2C247D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB892A9-4B46-4AED-840A-2C3CD2C247D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB892A9-4B46-4AED-840A-2C3CD2C247D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDF068DB-B056-49BB-A1B4-89714FA9E26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF068DB-B056-49BB-A1B4-89714FA9E26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF068DB-B056-49BB-A1B4-89714FA9E26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF068DB-B056-49BB-A1B4-89714FA9E26A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA204067-9831-4FD0-93E9-5396F4DE5A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA204067-9831-4FD0-93E9-5396F4DE5A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA204067-9831-4FD0-93E9-5396F4DE5A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA204067-9831-4FD0-93E9-5396F4DE5A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A7AF693-E456-4241-B0E2-B1F9DB769E64}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB4B3276-18DF-45EB-B713-1884194299E4} = {AF4FD0B2-6FF9-4D85-B37C-1837B3B60680}
+		{DA44C524-C554-4BEF-9C9F-F325138498F3} = {AF4FD0B2-6FF9-4D85-B37C-1837B3B60680}
+		{DFB892A9-4B46-4AED-840A-2C3CD2C247D1} = {3D35C009-6968-4D1D-B91C-B32F825E2BCA}
+		{BDF068DB-B056-49BB-A1B4-89714FA9E26A} = {3D35C009-6968-4D1D-B91C-B32F825E2BCA}
+		{DA204067-9831-4FD0-93E9-5396F4DE5A9A} = {E810C166-0CD0-41EB-B3F5-736F6909EFD9}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .header-shadow{
+        box-shadow: #28282812 3px 0px 6px;
+    }
+
+    .sidebar-translate-close {
+        @apply max-sm:translate-x-[-300px];
+    }
+
+    .sidebar-translate-open {
+        @apply max-sm:translate-x-0;
+    }
+}

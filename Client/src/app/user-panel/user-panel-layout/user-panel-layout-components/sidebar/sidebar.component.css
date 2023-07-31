@@ -1,0 +1,13 @@
+@tailwind components;
+
+@layer components{
+    .sidebar-btn{
+        @apply duration-200 w-[200px] py-2 cursor-pointer text-center mx-auto
+         bg-slate-50 hover:text-omg_red rounded-sm hover:border-l-8 hover:border-omg_red 
+         hover:shadow-sm max-sm:w-full max-sm:ml-2 md:w-full md:ml-2;
+    }
+
+    .sidebar-btn-div{
+        @apply flex items-center justify-center gap-2;
+    }
+}

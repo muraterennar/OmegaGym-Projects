@@ -1,0 +1,141 @@
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 relative">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img class="mx-auto h-20 w-auto" src="assets/img/omega_logo.png" alt="Your Company">
+        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Üye Ol
+        </h2>
+    </div>
+
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6" [formGroup]="registerFrom" (ngSubmit)="register(registerFrom.value)">
+            <div>
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+                <div class="mt-2">
+                    <input id="email" name="email" type="email" autocomplete="email" formControlName="email"
+                        [ngClass]="{'registerInvalid': submitted && registerComponnent.email?.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (registerComponnent.email?.errors)"><span
+                            class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin</p>
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (registerComponnent.email?.errors?.email)">
+                        <span class="font-medium">Hata !</span> Doğru Türde Yazınız
+                    </p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (registerComponnent.email?.errors?.minlength || registerComponnent.email.errors?.maxlength)">
+                        <span class="font-medium">Hata !</span> En az 13 en fazla 150 karakter içermelidir
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <label for="firstName" class="block text-sm font-medium leading-6 text-gray-900">Ad</label>
+                <div class="mt-2">
+                    <input id="firstName" name="firstName" type="text" formControlName="firstName"
+                        [ngClass]="{'registerInvalid': submitted && registerComponnent.firstName?.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (registerComponnent.firstName?.errors)">
+                        <span class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin
+                    </p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (registerComponnent.firstName?.errors?.minlength || registerComponnent.firstName?.errors?.minlength)">
+                        <span class="font-medium"></span>En az 6 en fazla 250 karakter içerebilir
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <label for="lastName" class="block text-sm font-medium leading-6 text-gray-900">Soyad</label>
+                <div class="mt-2">
+                    <input id="lastName" name="lastName" type="text" formControlName="lastName"
+                        [ngClass]="{'registerInvalid': submitted && registerComponnent.lastName?.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (registerComponnent.lastName?.errors)">
+                        <span class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin
+                    </p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (registerComponnent.lastName?.errors?.minlength || registerComponnent.lastName?.errors?.minlength)">
+                        <span class="font-medium"></span>En az 6 en fazla 250 karakter içerebilir
+                    </p>
+                </div>
+            </div>
+
+            <div>
+
+                <label for="countries" class="block text-sm font-medium text-gray-90">Cinsiyet</label>
+                <select id="countries" formControlName="gender"
+                    [ngClass]="{'registerInvalid': submitted && registerComponnent.gender?.errors}"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg ring-inset ring-gray-300 focus:ring-dark block w-full p-2.5">
+                    <option selected>Seçiniz ...</option>
+                    <option [value]="men">Erkek</option>
+                    <option [value]="woman">Kadın</option>
+                </select>
+                <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (registerComponnent.gender?.errors)">
+                    <span class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin
+                </p>
+
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                <div class="mt-2 relative">
+                    <button type="button" class="absolute top-0 right-0 lg:text-3xl text-omg_red"
+                        (click)="toogleEye(eyeOpen, eyeClose, passwordInput)"><i #eyeOpen class="ri-eye-line p-2"></i>
+                        <i #eyeClose class="ri-eye-off-line p-2 hidden"></i></button>
+                    <input #passwordInput id="password" name="password" type="password" autocomplete="current-password"
+                        formControlName="password"
+                        [ngClass]="{'registerInvalid': submitted && registerComponnent.password?.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted && (registerComponnent.password?.errors)">
+                        <span class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin
+                    </p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (registerComponnent.password?.errors?.minlength || registerComponnent.password?.errors?.maxlength)">
+                        <span class="font-medium"></span>En az 6 en fazla 12 karakter içerebilir
+                    </p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (registerComponnent.password?.errors?.invalidPassword)"><span
+                            class="font-medium"></span>Büyük Küçük Harf / Özel Karakter / Rakam İçermelidir</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center justify-between">
+                    <label for="confirmPassword" class="block text-sm font-medium leading-6 text-gray-900">Şifre
+                        Tekrar</label>
+                </div>
+                <div class="mt-2 relative">
+                    <button type="button" class="absolute top-0 right-0 lg:text-3xl text-omg_red"
+                        (click)="toogleEye(eyeOpenConfirm, eyeCloseConfirm, passwordConfirmInput)"><i #eyeOpenConfirm
+                            class="ri-eye-line p-2"></i> <i #eyeCloseConfirm
+                            class="ri-eye-off-line p-2 hidden"></i></button>
+                    <input #passwordConfirmInput id="confirmPassword" name="confirmPassword" type="password"
+                        autocomplete="current-password" formControlName="confirmPassword"
+                        [ngClass]="{'registerInvalid': submitted && registerComponnent.confirmPassword?.errors}"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-dark sm:text-sm sm:leading-6">
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (registerComponnent.confirmPassword?.errors)"><span
+                            class="font-medium"></span>Lütfen Bu Alanı Boş Geçmeyin</p>
+                    <p class="mt-2 text-sm text-red-600"
+                        *ngIf="submitted && (registerComponnent.confirmPassword?.errors?.minlength || registerComponnent.confirmPassword?.errors?.maxlength)">
+                        <span class="font-medium"></span>En az 6 en fazla 12 karakter içerebilir
+                    </p>
+                    <p class="mt-2 text-sm text-red-600" *ngIf="submitted || (registerFrom.hasError('mismatch'))"><span
+                            class="font-medium"></span>Şifreler Eşleşmiyor !</p>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" [disabled]="registerFrom.errors"
+                    class="flex w-full justify-center rounded-md bg-omg_red px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Kayıt</button>
+            </div>
+        </form>
+
+        <p class="mt-10 text-center text-sm text-gray-500">
+            Kaydınız var mı ?
+            <a routerLink="/giris" class="font-semibold leading-6 text-omg_red hover:opacity-80">Giriş Yapın</a>
+        </p>
+    </div>
+
+    <div class="absolute bottom-5 text-center left-[46.5%] px-1 ">
+        <a routerLink="/anasayfa"><i class="ri-arrow-right-s-line"></i> <span
+                class="border-b-2 px-1 border-transparent hover:border-omg_red">Ana Sayfa</span></a>
+    </div>
+</div>

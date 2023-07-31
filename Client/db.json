@@ -1,0 +1,198 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "link": "https://images.unsplash.com/photo-1591311630200-ffa9120a540f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image1"
+    },
+    {
+      "id": 2,
+      "link": "https://images.unsplash.com/photo-1590239926044-4131f5d0654d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image2"
+    },
+    {
+      "id": 3,
+      "link": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image3"
+    },
+    {
+      "id": 4,
+      "link": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image4"
+    },
+    {
+      "id": 5,
+      "link": "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image5"
+    },
+    {
+      "id": 6,
+      "link": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image6"
+    },
+    {
+      "id": 7,
+      "link": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image7"
+    },
+    {
+      "id": 8,
+      "link": "https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image8"
+    },
+    {
+      "id": 9,
+      "link": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image9"
+    },
+    {
+      "id": 10,
+      "link": "https://images.unsplash.com/photo-1521805103424-d8f8430e8933?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image10"
+    },
+    {
+      "id": 11,
+      "link": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image11"
+    },
+    {
+      "id": 12,
+      "link": "https://images.unsplash.com/photo-1542766788-a2f588f447ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "alt": "image12"
+    }
+  ],
+  "persons": [
+    {
+      "id": 1,
+      "username": "Mehmet Baltacı",
+      "img": "assets/img/mehmet-baltaci.jpg",
+      "position": "Kurucu Ortak / Antrenör"
+    },
+    {
+      "id": 2,
+      "username": "Gökhan Sarıkurt",
+      "img": "assets/img/gokhan-sarikurt.jpg",
+      "position": "Kurucu Ortak / Antrenör"
+    },
+    {
+      "id": 3,
+      "username": "Serdar Sarıkurt",
+      "img": "assets/img/serdar-sarikurt.jpg",
+      "position": "Kurucu Ortak / Antrenör"
+    }
+  ],
+  "certificas": [
+    {
+      "id": 1,
+      "userId": 1,
+      "certificaName": "Lisans Diploması",
+      "certificaImg": "assets/img/lisans.jpg"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "certificaName": "Onur Belgesi",
+      "certificaImg": "assets/img/onur.jpg"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "certificaName": "Yardımcı Antrenör Belgesi / Vücut Geliştirme",
+      "certificaImg": "assets/img/yardimci-antrenor.png"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "certificaName": "Yardımcı Antrenör Belgesi / Yüzme",
+      "certificaImg": "assets/img/yardimci-antrenor-2.png"
+    }
+  ],
+  "pricing": {
+    "fitness": [
+      {
+        "id": 1,
+        "priceTitle": "1 Aylık",
+        "priceDescription": "Sadece Fitness: Bir Aylık Yoğun Antrenman",
+        "article_1": "Çeşitli ekipmanlar",
+        "article_2": "Kişiselleştirilmiş antrenman planı",
+        "article_3": "Profesyonel destek, motivasyon",
+        "article_4": "Esnek saatler",
+        "price": 350
+      },
+      {
+        "id": 2,
+        "priceTitle": "3 Aylık",
+        "priceDescription": "Forma Adım Adım: 3 Aylık Fitness Üyeliği",
+        "article_1": "Kapsamlı ekipman seçimi",
+        "article_2": "Uzman rehberlik",
+        "article_3": "Hedefe yönelik antrenman programı",
+        "article_4": "İlerleme takibi",
+        "price": 975
+      },
+      {
+        "id": 3,
+        "priceTitle": "6 Aylık",
+        "priceDescription": "Güçlenmek İçin 6 Aylık Fitness Üyeliği",
+        "article_1": "Geniş ekipman seçimi",
+        "article_2": "Esnek çalışma saatleri",
+        "article_3": "Kişisel antrenman programı,",
+        "article_4": "Güçlenme, kondisyon ve forma ulaşma süreci",
+        "price": 1800
+      },
+      {
+        "id": 4,
+        "priceTitle": "12 Aylık",
+        "priceDescription": "Uzun Vadeli Fitness Hedefleri İçin 12 Aylık Üyelik",
+        "article_1": "Zengin ekipman seçimi",
+        "article_2": "Esnek çalışma saatleri",
+        "article_3": "Özel antrenman planı",
+        "article_4": "Uzun vadeli hedefler için destek",
+        "price": 3300
+      }
+    ],
+    "boks": [
+      {
+        "id": 1,
+        "pricingTitle": "Özel ders 8 seans",
+        "pricngDescription": "Hedeflerine Ulaşmak İçin Boks",
+        "article_1": "Kişisel antrenman, özel dikkat",
+        "article_2": "Uzman rehberlik, hedefe odaklanma",
+        "article_3": "Güçlenme fırsatı: Birebir eğitim",
+        "price": 1200
+      }
+    ],
+    "plates": [
+      {
+        "id": 1,
+        "pricingTitle": "özel ders 8 seans",
+        "prcingDescription": "Birebir Plates Dersleriyle Hedefe Ulaş: 12 Ders",
+        "article_1": "Kişisel antrenman: 12 ders özel plates",
+        "article_2": "Uzman rehberlik: Özel dersle hedefe",
+        "article_3": "Vücut esnekliği: 12 ders etkili plates",
+        "price": 800
+      }
+    ],
+    "swimming": [
+      {
+        "id": 1,
+        "prcingTitle": "özel ders 8 seans",
+        "priceDescription": "Yüzme Becerilerini İlerlet: 8 Seanslık Özel Yüzme Dersi",
+        "article_1": "Kişisel antrenman: 8 seans özel yüzme",
+        "article_2": "Teknik gelişim: Uzman rehberlikle",
+        "article_3": "Yüzme becerileri: 8 seans etkili dersler",
+        "price": 2400
+      }
+    ],
+    "folkDance": [
+      {
+        "id": 1,
+        "prcingTitle": "1 oyun 8 ders",
+        "pricngDescription": "Geleneksel Danslara Merhaba: 8 Seanslık Özel Halk Oyunları Dersleri",
+        "article_1": "Geleneksel danslar: Kemençe Horon",
+        "article_2": "Ritim ve kültür: Harmandalı",
+        "article_3": "Grup performansı: Halk oyunları",
+        "price": 1200
+      }
+    ]
+  }
+}
