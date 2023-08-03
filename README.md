@@ -24,13 +24,5 @@ Bu projeyi, kendimi sürekli geliştirmek ve yaratıcılığımı teknolojiyle b
 
 🙌 Her türlü görüş ve önerilerinizi bekliyorum, sağlıklı günler!
 
-
-## 🌄 Ekran Görüntüleri
-
-![Uygulama Ekran Görüntüsü](https://firebasestorage.googleapis.com/v0/b/file-upload-firebase-d3899.appspot.com/o/test%2Fomega-gym.png?alt=media&token=e6ed80ae-3d25-43b7-9b9f-48035e3c268d)
-
-  
 ## 🌐 Canlı Demo
 https://customeditor.muraterennar.com
-
-  
