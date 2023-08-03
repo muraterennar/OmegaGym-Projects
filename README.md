@@ -33,8 +33,11 @@ Eğitmenleri, spor konusunda uzmanlaşmış, deneyimli ve motive edici kişilerd
 🙌 Her türlü görüş ve önerilerinizi bekliyorum, sağlıklı günler!
 
 
-## Demo
+## 🌄 Ekran Görüntüleri
 
-https://omega-gym.com
+![Uygulama Ekran Görüntüsü](https://firebasestorage.googleapis.com/v0/b/file-upload-firebase-d3899.appspot.com/o/portFolioAPIPictures%2F1691057753034__EkranResmi2023080310.52.52.png?alt=media&token=fab7e01f-bfba-4c32-98ea-0eaa9cc36b1a)
+
+  
+## 🌐 Canlı Demo
 
   
