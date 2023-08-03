@@ -25,4 +25,4 @@ Bu projeyi, kendimi sürekli geliştirmek ve yaratıcılığımı teknolojiyle b
 🙌 Her türlü görüş ve önerilerinizi bekliyorum, sağlıklı günler!
 
 ## 🌐 Canlı Demo
-https://customeditor.muraterennar.com
+https://omega-gym.com
