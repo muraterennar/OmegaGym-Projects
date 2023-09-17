@@ -24,5 +24,5 @@ Bu projeyi, kendimi sürekli geliştirmek ve yaratıcılığımı teknolojiyle b
 
 🙌 Her türlü görüş ve önerilerinizi bekliyorum, sağlıklı günler!
 
-## 🌐 Canlı Demo
+## 🌐 Canlı
 https://omega-gym.com
